@@ -1,0 +1,43 @@
+REMARK  Name = validated_system/native_HSA_warfarin.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C2_2  and  C6_6
+REMARK    3  A    between atoms: C2_2  and  C13_13
+REMARK    4  A    between atoms: C3_3  and  C4_4
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  RWF A3001      34.821  14.619   9.627  0.00  0.00    +0.000 A 
+ATOM      2  C11 RWF A3001      32.479  15.914   8.560  0.00  0.00    +0.000 A 
+ATOM      3  C13 RWF A3001      32.306  14.710   9.369  0.00  0.00    +0.000 A 
+ATOM      4  C14 RWF A3001      33.448  14.092   9.891  0.00  0.00    +0.000 A 
+ATOM      5  C15 RWF A3001      36.037  14.039  10.111  0.00  0.00    +0.000 A 
+ATOM      6  C16 RWF A3001      37.280  14.618   9.785  0.00  0.00    +0.000 A 
+ATOM      7  C17 RWF A3001      37.339  15.779   8.973  0.00  0.00    +0.000 A 
+ATOM      8  C18 RWF A3001      36.165  16.370   8.490  0.00  0.00    +0.000 A 
+ATOM      9  C19 RWF A3001      34.918  15.785   8.818  0.00  0.00    +0.000 A 
+ATOM     10  O1  RWF A3001      33.773  16.400   8.314  0.00  0.00    +0.000 OA
+ATOM     11  O2  RWF A3001      31.570  16.557   8.053  0.00  0.00    +0.000 OA
+ATOM     12  O4  RWF A3001      33.449  12.975  10.662  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   3  13
+ATOM     13  C2  RWF A3001      30.851  14.227   9.572  0.00  0.00    +0.000 C 
+BRANCH  13  14
+ATOM     14  C6  RWF A3001      30.536  12.952   8.741  0.00  0.00    +0.000 A 
+ATOM     15  C7  RWF A3001      30.019  13.055   7.423  0.00  0.00    +0.000 A 
+ATOM     16  C8  RWF A3001      29.731  11.896   6.651  0.00  0.00    +0.000 A 
+ATOM     17  C9  RWF A3001      29.951  10.621   7.177  0.00  0.00    +0.000 A 
+ATOM     18  C10 RWF A3001      30.451  10.496   8.453  0.00  0.00    +0.000 A 
+ATOM     19  C12 RWF A3001      30.746  11.641   9.242  0.00  0.00    +0.000 A 
+ENDBRANCH  13  14
+BRANCH  13  20
+ATOM     20  C3  RWF A3001      30.547  14.043  11.082  0.00  0.00    +0.000 C 
+BRANCH  20  21
+ATOM     21  C4  RWF A3001      29.077  14.052  11.407  0.00  0.00    +0.000 C 
+ATOM     22  C5  RWF A3001      28.542  13.249  12.560  0.00  0.00    +0.000 C 
+ATOM     23  O3  RWF A3001      28.233  14.817  10.585  0.00  0.00    +0.000 OA
+ENDBRANCH  20  21
+ENDBRANCH  13  20
+ENDBRANCH   3  13
+TORSDOF 4

@@ -1,0 +1,8 @@
+receptor = receptor_A_only.pdbqt
+center_x = -9.83
+center_y = 26.82
+center_z = 55.76
+size_x = 15.0
+size_y = 15.0
+size_z = 15.0
+exhaustiveness = 32

@@ -1,0 +1,495 @@
+MODEL 1
+REMARK VINA RESULT:   -11.127      0.000      0.000
+REMARK INTER + INTRA:         -14.136
+REMARK INTER:                 -14.054
+REMARK INTRA:                  -0.082
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404     -10.266  26.732  56.341  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404     -10.325  27.717  55.393  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404     -11.363  27.739  54.465  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404     -11.328  28.603  53.356  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404     -12.379  28.609  52.447  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404     -13.469  27.763  52.633  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404     -13.506  26.910  53.726  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404     -12.440  26.908  54.645  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404     -12.461  26.065  55.741  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404     -11.279  25.767  56.351  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404     -11.147  24.696  56.844  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -9.215  28.324  54.790  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -9.516  29.019  54.183  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -9.028  26.668  57.244  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -7.976  25.770  56.577  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -7.978  24.398  56.783  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -7.030  23.597  56.167  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -6.074  24.164  55.338  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -6.073  25.534  55.126  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -7.022  26.335  55.742  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -9.400  26.189  58.651  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -8.225  26.031  61.010  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -8.489  26.783  59.720  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -7.988  27.844  59.549  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:   -10.221      2.046      3.607
+REMARK INTER + INTRA:         -12.993
+REMARK INTER:                 -12.696
+REMARK INTRA:                  -0.297
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.256  25.548  57.693  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -9.422  24.831  57.705  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404     -10.587  25.373  57.171  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404     -11.835  24.753  57.366  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404     -12.981  25.313  56.818  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404     -12.900  26.485  56.071  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404     -11.671  27.098  55.876  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404     -10.512  26.529  56.433  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -9.279  27.126  56.247  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -8.275  26.824  57.119  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -7.473  27.660  57.376  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -9.804  23.931  58.710  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -9.025  23.446  59.023  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -7.040  24.966  58.423  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -6.347  23.954  57.501  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -5.956  24.310  56.217  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -5.322  23.390  55.398  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -5.072  22.107  55.859  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -5.456  21.749  57.142  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -6.090  22.670  57.961  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -7.451  24.350  59.765  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -8.314  26.270  61.359  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -7.224  25.307  60.931  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -6.186  25.307  61.504  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:   -10.136      1.345      2.691
+REMARK INTER + INTRA:         -12.884
+REMARK INTER:                 -12.736
+REMARK INTRA:                  -0.148
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.870  26.349  56.578  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404     -10.045  25.815  56.120  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404     -10.850  26.536  55.242  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404     -12.153  26.108  54.932  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404     -12.934  26.843  54.049  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404     -12.429  28.002  53.467  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404     -11.144  28.428  53.772  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404     -10.356  27.681  54.665  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -9.073  28.089  54.979  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -8.508  27.624  56.129  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -7.752  28.326  56.716  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404     -10.885  24.966  56.852  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404     -10.386  24.573  57.586  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -8.096  25.579  57.653  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -7.201  24.537  56.966  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -6.398  24.886  55.890  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -5.587  23.939  55.286  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -5.573  22.636  55.756  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -6.370  22.284  56.834  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -7.180  23.232  57.439  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -9.053  24.948  58.672  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -8.953  26.843  60.508  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -8.751  25.397  60.098  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -8.347  24.616  60.893  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -9.921      1.880      3.015
+REMARK INTER + INTRA:         -12.613
+REMARK INTER:                 -12.678
+REMARK INTRA:                   0.065
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.233  25.249  57.917  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -8.250  26.302  57.042  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404      -9.429  26.658  56.393  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404      -9.426  27.585  55.335  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404     -10.617  27.927  54.708  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404     -11.816  27.357  55.125  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404     -11.823  26.442  56.168  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404     -10.615  26.099  56.802  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404     -10.602  25.190  57.844  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -9.430  24.562  58.142  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -9.469  23.450  58.555  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -7.187  26.675  56.208  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -7.242  27.625  56.019  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -6.882  24.808  58.491  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -6.235  23.809  57.521  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -5.568  24.249  56.386  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -4.979  23.338  55.523  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -5.052  21.980  55.792  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -5.713  21.538  56.927  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -6.301  22.450  57.790  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -7.049  24.229  59.901  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -7.977  26.269  61.298  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -6.864  25.289  60.982  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -5.840  25.356  61.577  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -9.658      2.401      6.774
+REMARK INTER + INTRA:         -12.281
+REMARK INTER:                 -12.526
+REMARK INTRA:                   0.245
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -6.924  24.788  56.452  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -6.742  23.518  56.930  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404      -5.770  22.690  56.375  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404      -5.710  21.322  56.695  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404      -4.727  20.519  56.130  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404      -3.797  21.066  55.251  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404      -3.853  22.415  54.933  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404      -4.849  23.225  55.507  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -4.919  24.572  55.203  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -6.100  25.222  55.408  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -6.393  26.112  54.680  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -7.757  22.691  57.428  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -7.413  21.792  57.548  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -8.101  25.605  56.997  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -8.006  25.647  58.528  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -6.896  25.140  59.188  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -6.817  25.194  60.570  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -7.850  25.759  61.302  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -8.958  26.272  60.647  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -9.036  26.218  59.264  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -9.437  25.032  56.508  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -9.749  27.483  55.577  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404     -10.278  26.076  55.782  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404     -11.358  25.794  55.381  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -9.560      1.894      5.445
+REMARK INTER + INTRA:         -12.157
+REMARK INTER:                 -11.786
+REMARK INTRA:                  -0.370
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.359  25.026  57.241  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -7.462  25.131  56.212  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404      -6.554  24.106  55.964  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404      -5.488  24.281  55.062  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404      -4.598  23.240  54.829  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404      -4.760  22.022  55.482  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404      -5.809  21.846  56.372  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404      -6.709  22.902  56.605  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -7.762  22.744  57.487  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -8.338  23.861  58.016  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -8.775  23.810  59.118  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -6.872  26.325  55.775  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -7.487  26.794  55.190  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -9.237  26.241  57.563  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404     -10.087  26.578  56.330  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404     -11.181  25.798  55.984  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404     -11.947  26.118  54.874  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404     -11.623  27.224  54.104  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404     -10.534  28.009  54.450  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -9.769  27.688  55.560  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -8.382  27.427  58.027  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -8.163  26.729  60.564  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -8.581  27.733  59.508  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -9.073  28.760  59.840  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -9.467      1.470      4.212
+REMARK INTER + INTRA:         -12.039
+REMARK INTER:                 -11.591
+REMARK INTRA:                  -0.448
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.798  25.876  56.613  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404     -10.034  25.540  56.131  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404     -10.757  26.445  55.358  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404     -12.107  26.212  55.038  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404     -12.804  27.129  54.261  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404     -12.170  28.277  53.796  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404     -10.839  28.510  54.110  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404     -10.136  27.579  54.896  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -8.809  27.794  55.218  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -8.289  27.140  56.296  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -7.446  27.677  56.936  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404     -10.961  24.721  56.789  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404     -11.379  24.125  56.147  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -8.109  24.904  57.577  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -8.190  25.477  58.999  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -9.277  26.242  59.398  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -9.344  26.744  60.688  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -8.324  26.482  61.588  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404      -7.239  25.714  61.195  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404      -7.173  25.211  59.905  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -6.666  24.629  57.139  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -5.844  24.420  54.638  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -6.602  23.857  55.825  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -7.155  22.813  55.723  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -9.344      2.604      6.508
+REMARK INTER + INTRA:         -11.885
+REMARK INTER:                 -11.776
+REMARK INTRA:                  -0.108
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.383  25.304  57.909  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -7.978  24.276  57.100  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404      -6.799  23.587  57.375  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404      -6.252  22.684  56.447  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404      -5.077  22.006  56.748  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404      -4.442  22.215  57.968  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404      -4.979  23.106  58.886  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404      -6.169  23.791  58.578  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -6.720  24.681  59.481  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -7.587  25.623  59.014  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -7.616  26.684  59.546  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -8.184  24.210  55.715  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -8.241  25.109  55.354  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -9.606  26.122  57.481  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404     -10.876  25.366  57.894  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404     -10.983  24.785  59.150  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404     -12.140  24.114  59.515  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404     -13.199  24.022  58.625  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404     -13.098  24.606  57.372  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404     -11.941  25.277  57.008  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404      -9.566  26.422  55.978  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404      -7.573  28.119  56.325  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404      -8.895  27.758  55.676  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404      -9.412  28.527  54.936  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:    -9.330      2.451      6.347
+REMARK INTER + INTRA:         -11.866
+REMARK INTER:                 -11.960
+REMARK INTRA:                   0.094
+REMARK UNBOUND:                -0.082
+REMARK  Name = reference_warfarin_chainA.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  C6_6
+REMARK    5  A    between atoms: C5_5  and  C12_12
+REMARK    6  A    between atoms: C13_13  and  O14_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C12 SWF A 404      -8.485  24.200  57.741  0.00  0.00    +0.000 C 
+ATOM      2  C13 SWF A 404      -7.795  23.526  56.769  0.00  0.00    +0.000 C 
+ATOM      3  C15 SWF A 404      -6.445  23.232  56.942  0.00  0.00    +0.000 A 
+ATOM      4  C16 SWF A 404      -5.666  22.741  55.879  0.00  0.00    +0.000 A 
+ATOM      5  C17 SWF A 404      -4.322  22.450  56.080  0.00  0.00    +0.000 A 
+ATOM      6  C18 SWF A 404      -3.744  22.640  57.331  0.00  0.00    +0.000 A 
+ATOM      7  C19 SWF A 404      -4.510  23.124  58.382  0.00  0.00    +0.000 A 
+ATOM      8  C20 SWF A 404      -5.871  23.417  58.176  0.00  0.00    +0.000 A 
+ATOM      9  O21 SWF A 404      -6.650  23.898  59.212  0.00  0.00    +0.000 OA
+ATOM     10  C22 SWF A 404      -7.798  24.565  58.903  0.00  0.00    +0.000 C 
+ATOM     11  O23 SWF A 404      -8.155  25.444  59.616  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   2  12
+ATOM     12  O14 SWF A 404      -8.022  23.642  55.391  0.00  0.00    +0.000 OA
+ATOM     13  H   SWF A 404      -7.657  22.866  54.937  0.00  0.00    +0.000 HD
+ENDBRANCH   2  12
+BRANCH   1  14
+ATOM     14  C5  SWF A 404      -9.926  24.627  57.440  0.00  0.00    +0.000 C 
+BRANCH  14  15
+ATOM     15  C6  SWF A 404      -9.895  25.891  56.569  0.00  0.00    +0.000 A 
+ATOM     16  C7  SWF A 404      -8.779  26.716  56.549  0.00  0.00    +0.000 A 
+ATOM     17  C8  SWF A 404      -8.760  27.848  55.751  0.00  0.00    +0.000 A 
+ATOM     18  C9  SWF A 404      -9.856  28.162  54.964  0.00  0.00    +0.000 A 
+ATOM     19  C10 SWF A 404     -10.971  27.337  54.976  0.00  0.00    +0.000 A 
+ATOM     20  C11 SWF A 404     -10.990  26.204  55.775  0.00  0.00    +0.000 A 
+ENDBRANCH  14  15
+BRANCH  14  21
+ATOM     21  C4  SWF A 404     -10.720  24.829  58.736  0.00  0.00    +0.000 C 
+BRANCH  21  23
+ATOM     22  C1  SWF A 404     -13.211  24.344  58.008  0.00  0.00    +0.000 C 
+ATOM     23  C2  SWF A 404     -11.969  23.955  58.787  0.00  0.00    +0.000 C 
+ATOM     24  O3  SWF A 404     -11.977  22.969  59.445  0.00  0.00    +0.000 OA
+ENDBRANCH  21  23
+ENDBRANCH  14  21
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
