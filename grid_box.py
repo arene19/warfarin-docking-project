@@ -75,8 +75,8 @@ size_z = {box_params['size'][2]:.1f}
 BINDING_BOXES ={
 "VKORC1_Human": {
         "center": (-9.83, 26.82, 55.76),
-        "size":   (20.0, 20.0, 20.0),
-        "exhaustiveness": 32,
+        "size":   (12.0,12.0,12.0),
+        "exhaustiveness": 64,
         "num_modes": 20
 
     },

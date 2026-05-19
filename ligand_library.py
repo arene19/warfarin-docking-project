@@ -53,10 +53,19 @@ def prepare_ligand_library(smiles_dict: dict) -> pd.DataFrame:
 
     return pd.DataFrame(records)
 
+# ligand_library.py
 
-def generate_3d_conformers(mol: Chem.Mol, mol_name: str, 
-                            output_dir: str = "ligands/",
-                            num_confs: int = 10) -> str:
+def generate_3d_conformers(mol):
+    mol = Chem.AddHs(mol)
+    # Use ETKDGv3 for more accurate bioactive conformers
+    params = AllChem.ETKDGv3()
+    AllChem.EmbedMolecule(mol, params)
+    
+    # CRITICAL: Force Geometry Optimization
+    # This relaxes the molecule into its lowest energy state before docking
+    AllChem.UFFOptimizeMolecule(mol) 
+    
+    return mol
 # Add this snippet to your ligand_library.py function
 def minimize_ligand(mol):
     mol = Chem.AddHs(mol)
