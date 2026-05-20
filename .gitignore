@@ -1,0 +1,25 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Heavy Bio Data (Keep repository clean)
+inputs/
+outputs/
+results/
+old_file_backup/
+logs/
+figures/
+vkor_docking/
+proteins/
+ligands/
+ligands_archive/
+pdbqt_ligands/
+pdbqt_receptors/
+
+# System specific junk
+*.pdb
+*.pdbqt
+*.csv
+*.sdf
+*:Zone.Identifier

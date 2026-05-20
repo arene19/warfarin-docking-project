@@ -12,7 +12,7 @@ receptors:
     native_ligand_resname: "SWF"
     padding: 6.0
     force_center: [-9.83, 26.82, 55.76]  # Your original baseline center
-    force_size: [20.0, 20.0, 20.0]       # Your original baseline size
+    force_size: [15.0,15.0,15.0]       # Your original baseline size
     description: "Human VKORC1 bound to Warfarin (True Target)"
   HSA:
     pdb_id: "1H9Z"
