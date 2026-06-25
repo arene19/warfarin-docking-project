@@ -1,0 +1,655 @@
+docking_params:
+  dock_timeout_s: 900
+  energy_range: 3.0
+  exhaustiveness: 20
+  min_rmsd: 1.0
+  n_cpu: null
+  num_conformers: 20
+  num_modes: 9
+ligands:
+  BENZ_R:
+    active: true
+    smiles: CC(=O)N[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  BENZ_S:
+    active: true
+    smiles: CC(=O)N[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  RL_Gen_01:
+    active: false
+    smiles: CC(=O)Nc1cc(Br)cnc1Br
+  RL_Gen_02:
+    active: false
+    smiles: '[O-][n+]1c(F)cc(Cl)cc1Cl'
+  RL_Gen_03:
+    active: false
+    smiles: O=C(O)c1c[nH]c(-c2[nH]c(Br)c(Br)c2Br)c1
+  RL_Gen_04_isoA:
+    active: false
+    smiles: C[C@]1(CBr)C[C@H](Br)C[C@H](Br)[C@]1(C)O
+  RL_Gen_04_isoB:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@H](Br)C[C@H](Br)[C@]1(C)O
+  RL_Gen_04_isoC:
+    active: false
+    smiles: C[C@]1(CBr)C[C@@H](Br)C[C@H](Br)[C@]1(C)O
+  RL_Gen_04_isoD:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@@H](Br)C[C@H](Br)[C@]1(C)O
+  RL_Gen_04_isoE:
+    active: false
+    smiles: C[C@]1(CBr)C[C@H](Br)C[C@@H](Br)[C@]1(C)O
+  RL_Gen_04_isoF:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@H](Br)C[C@@H](Br)[C@]1(C)O
+  RL_Gen_04_isoG:
+    active: false
+    smiles: C[C@]1(CBr)C[C@@H](Br)C[C@@H](Br)[C@]1(C)O
+  RL_Gen_04_isoH:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@@H](Br)C[C@@H](Br)[C@]1(C)O
+  RL_Gen_04_isoI:
+    active: false
+    smiles: C[C@]1(CBr)C[C@H](Br)C[C@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoJ:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@H](Br)C[C@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoK:
+    active: false
+    smiles: C[C@]1(CBr)C[C@@H](Br)C[C@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoL:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@@H](Br)C[C@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoM:
+    active: false
+    smiles: C[C@]1(CBr)C[C@H](Br)C[C@@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoN:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@H](Br)C[C@@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoO:
+    active: false
+    smiles: C[C@]1(CBr)C[C@@H](Br)C[C@@H](Br)[C@@]1(C)O
+  RL_Gen_04_isoP:
+    active: false
+    smiles: C[C@@]1(CBr)C[C@@H](Br)C[C@@H](Br)[C@@]1(C)O
+  RL_Gen_05:
+    active: false
+    smiles: O=C([O-])C[n+]1cccc(C(=O)[O-])c1
+  RL_Gen_06:
+    active: false
+    smiles: Cn1ccc2c1ccc[n+]2C
+  RL_Gen_07:
+    active: false
+    smiles: O=C(c1ccccc1)c1c(C(F)(F)F)[n+]([O-])c2cc(Cl)c(Cl)cc2[n+]1[O-]
+  RL_Gen_08:
+    active: false
+    smiles: '[O-][n+]1cn(-c2ccc(Cl)cc2)c(Cl)c1Cl'
+  RL_Gen_09:
+    active: false
+    smiles: CS(=O)(=O)c1ccc(Br)cc1
+  RL_Gen_10:
+    active: false
+    smiles: COc1c(Br)cc2ccc(Br)cc2c1Br
+  RL_Gen_11:
+    active: false
+    smiles: Cc1c(CN2CCC3(CC2)CCN(C(C)C)C3)cnn1C
+  RL_Gen_12:
+    active: false
+    smiles: CCN(C)CCN1CCC2(CCCCC2)CC1
+  RL_Gen_13_isoA:
+    active: false
+    smiles: CC(C)=CC1=NNC12CCN([C@H](C)c1ccccc1)CC2
+  RL_Gen_13_isoB:
+    active: false
+    smiles: CC(C)=CC1=NNC12CCN([C@@H](C)c1ccccc1)CC2
+  RL_Gen_14:
+    active: false
+    smiles: CN1CCC2(CC1)CCN(C(=O)c1ccc(F)cc1)CC2
+  RL_Gen_15:
+    active: false
+    smiles: CC#CSc1ccc(C(=O)N2CCC3(CCN(C)CC3)CC2)cc1
+  RL_Gen_16:
+    active: false
+    smiles: CN1CCN(C2(CNC(=O)c3ccccn3)CCCCC2)CC1
+  RL_Gen_17_isoA:
+    active: false
+    smiles: COC/C=C/C1=CC[C@H](N(C)C)CC1
+  RL_Gen_17_isoB:
+    active: false
+    smiles: COC/C=C/C1=CC[C@@H](N(C)C)CC1
+  RL_Gen_17_isoC:
+    active: false
+    smiles: COC/C=C\C1=CC[C@H](N(C)C)CC1
+  RL_Gen_17_isoD:
+    active: false
+    smiles: COC/C=C\C1=CC[C@@H](N(C)C)CC1
+  RL_Gen_18:
+    active: false
+    smiles: CC(C)CCN1CCC2(CCN(Cc3ccccn3)CC2)C1
+  RL_Gen_19_isoA:
+    active: false
+    smiles: CC(=O)N1C[C@]2(CCN(Cc3cccs3)C2)c2ccccc21
+  RL_Gen_19_isoB:
+    active: false
+    smiles: CC(=O)N1C[C@@]2(CCN(Cc3cccs3)C2)c2ccccc21
+  RL_Gen_20_isoA:
+    active: false
+    smiles: CN(C)[C@@H]1CC[C@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@@H]1N(C)C
+  RL_Gen_20_isoB:
+    active: false
+    smiles: CN(C)[C@H]1CC[C@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@@H]1N(C)C
+  RL_Gen_20_isoC:
+    active: false
+    smiles: CN(C)[C@@H]1CC[C@@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@@H]1N(C)C
+  RL_Gen_20_isoD:
+    active: false
+    smiles: CN(C)[C@H]1CC[C@@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@@H]1N(C)C
+  RL_Gen_20_isoE:
+    active: false
+    smiles: CN(C)[C@@H]1CC[C@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@H]1N(C)C
+  RL_Gen_20_isoF:
+    active: false
+    smiles: CN(C)[C@@H]1C[C@@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)CC[C@@H]1N(C)C
+  RL_Gen_20_isoG:
+    active: false
+    smiles: CN(C)[C@@H]1CC[C@@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)C[C@H]1N(C)C
+  RL_Gen_20_isoH:
+    active: false
+    smiles: CN(C)[C@@H]1C[C@](CNC(=O)c2ccccc2Cl)(CC2CCCCC2)CC[C@@H]1N(C)C
+  RL_Gen_21_isoA:
+    active: false
+    smiles: COc1ccccc1NC(=O)COC(=O)[C@](C)(N)C(F)(F)F
+  RL_Gen_21_isoB:
+    active: false
+    smiles: COc1ccccc1NC(=O)COC(=O)[C@@](C)(N)C(F)(F)F
+  RL_Gen_22_isoA:
+    active: false
+    smiles: O=C(NCC(F)(F)F)O[C@H]1CC[C@@](CNC(=O)c2ccc(F)cc2Cl)(c2ccccc2)CC1
+  RL_Gen_22_isoB:
+    active: false
+    smiles: O=C(NCC(F)(F)F)O[C@H]1CC[C@](CNC(=O)c2ccc(F)cc2Cl)(c2ccccc2)CC1
+  RL_Gen_23:
+    active: false
+    smiles: Cc1ccsc1C(=O)Nc1ccccc1C(=O)NCC(F)(F)F
+  RL_Gen_24_isoA:
+    active: false
+    smiles: C[C@H](/N=c1\[nH]oc2ccccc12)c1cnccn1
+  RL_Gen_24_isoB:
+    active: false
+    smiles: C[C@@H](/N=c1\[nH]oc2ccccc12)c1cnccn1
+  RL_Gen_24_isoC:
+    active: false
+    smiles: C[C@H](/N=c1/[nH]oc2ccccc12)c1cnccn1
+  RL_Gen_24_isoD:
+    active: false
+    smiles: C[C@@H](/N=c1/[nH]oc2ccccc12)c1cnccn1
+  RL_Gen_25:
+    active: false
+    smiles: Cc1cc2c(o1)-c1ccccc1C(=O)C2=O
+  RL_Gen_26:
+    active: false
+    smiles: O=C(c1ccccc1)c1c([N+](=O)[O-])nc2sc(-c3ccc(Br)cc3)nn12
+  RL_Gen_27:
+    active: false
+    smiles: C=CCn1c(=O)c(C(=O)O)cc2c(=O)c3ccccc3oc21
+  RL_Gen_28_isoA:
+    active: false
+    smiles: C[C@@H]1CCCC[C@@H]1NC(=O)c1cc(Cl)cc(Br)c1OC(F)F
+  RL_Gen_28_isoB:
+    active: false
+    smiles: C[C@H]1CCCC[C@@H]1NC(=O)c1cc(Cl)cc(Br)c1OC(F)F
+  RL_Gen_28_isoC:
+    active: false
+    smiles: C[C@@H]1CCCC[C@H]1NC(=O)c1cc(Cl)cc(Br)c1OC(F)F
+  RL_Gen_28_isoD:
+    active: false
+    smiles: C[C@H]1CCCC[C@H]1NC(=O)c1cc(Cl)cc(Br)c1OC(F)F
+  RL_Gen_29_isoA:
+    active: false
+    smiles: O=C(O)/C=C(\C[C@](O)(Cn1cncn1)C(F)(F)F)c1ccc2ccccc2c1
+  RL_Gen_29_isoB:
+    active: false
+    smiles: O=C(O)/C=C(\C[C@@](O)(Cn1cncn1)C(F)(F)F)c1ccc2ccccc2c1
+  RL_Gen_29_isoC:
+    active: false
+    smiles: O=C(O)/C=C(/C[C@](O)(Cn1cncn1)C(F)(F)F)c1ccc2ccccc2c1
+  RL_Gen_29_isoD:
+    active: false
+    smiles: O=C(O)/C=C(/C[C@@](O)(Cn1cncn1)C(F)(F)F)c1ccc2ccccc2c1
+  RL_Gen_30_isoA:
+    active: false
+    smiles: CN(c1cc(Cl)cc(Cl)c1)[C@@H]1CCNC1
+  RL_Gen_30_isoB:
+    active: false
+    smiles: CN(c1cc(Cl)cc(Cl)c1)[C@H]1CCNC1
+  RL_Gen_31_isoA:
+    active: false
+    smiles: O[C@]1(C(F)(F)F)c2ccccc2-c2c(Cn3ccnc3)cccc21
+  RL_Gen_31_isoB:
+    active: false
+    smiles: O[C@@]1(C(F)(F)F)c2ccccc2-c2c(Cn3ccnc3)cccc21
+  RL_Gen_32_isoA:
+    active: false
+    smiles: COc1ccc([C@](O)(c2ccccn2)c2cccc3ccccc23)cc1
+  RL_Gen_32_isoB:
+    active: false
+    smiles: COc1ccc([C@@](O)(c2ccccn2)c2cccc3ccccc23)cc1
+  RL_Gen_33:
+    active: false
+    smiles: N#Cc1cccnc1N(CC(F)(F)F)CC(F)(F)F
+  RL_Gen_34_isoA:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAA:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAB:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAC:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAD:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAE:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoAF:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoB:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoC:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoD:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoE:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoF:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoG:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoH:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@@H](CO)[C@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoI:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoJ:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoK:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoL:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoM:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoN:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoO:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoP:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@@H](CO)[C@@]23C=C[C@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoQ:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoR:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoS:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoT:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoU:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoV:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoW:
+    active: false
+    smiles: C[C@@H]1CC[C@H]2[C@@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoX:
+    active: false
+    smiles: C[C@H]1CC[C@H]2[C@@H](CO)[C@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoY:
+    active: false
+    smiles: C[C@@H]1CC[C@@H]2[C@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_34_isoZ:
+    active: false
+    smiles: C[C@H]1CC[C@@H]2[C@H](CO)[C@@]23C=C[C@@]1(Cc1ccccc1)O3
+  RL_Gen_35_isoA:
+    active: false
+    smiles: OCc1cccc2c1-c1ccccc1[C@]2(O)C(F)(F)F
+  RL_Gen_35_isoB:
+    active: false
+    smiles: OCc1cccc2c1-c1ccccc1[C@@]2(O)C(F)(F)F
+  RL_Gen_36_isoA:
+    active: false
+    smiles: CCCCCc1ccc([C@](O)(c2c[nH]cn2)C(C)C)cc1
+  RL_Gen_36_isoB:
+    active: false
+    smiles: CCCCCc1ccc([C@@](O)(c2c[nH]cn2)C(C)C)cc1
+  RL_Gen_37_isoA:
+    active: false
+    smiles: O=C1N(CC2CC2)CCC12CCN([C@H](c1ccccc1)c1ccc(F)cc1)CC2
+  RL_Gen_37_isoB:
+    active: false
+    smiles: O=C1N(CC2CC2)CCC12CCN([C@@H](c1ccccc1)c1ccc(F)cc1)CC2
+  RL_Gen_38_isoA:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAA:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAB:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAC:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAD:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAE:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAF:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoAG:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAH:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAI:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAJ:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAK:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAL:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAM:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAN:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAO:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAP:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAQ:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAR:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAS:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAT:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAU:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAV:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAW:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAX:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAY:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoAZ:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoB:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoBA:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBB:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBC:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBD:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBE:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBF:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBG:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBH:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBI:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBJ:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBK:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoBL:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@H]2COCc1ccccc1
+  RL_Gen_38_isoC:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoD:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoE:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoF:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoG:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoH:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoI:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoJ:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoK:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoL:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoM:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoN:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoO:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoP:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@@]3(CCN4CC3CCC3)[C@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoQ:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoR:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoS:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoT:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoU:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoV:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoW:
+    active: false
+    smiles: CO[C@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoX:
+    active: false
+    smiles: CO[C@@]12CC[C@@]3(Cc4c(C5CCCCC5)cccc4[C@@]45CC[C@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoY:
+    active: false
+    smiles: CO[C@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_38_isoZ:
+    active: false
+    smiles: CO[C@@]12CC[C@]3(Cc4c(C5CCCCC5)cccc4[C@]45CC[C@@]3(CCN4CC3CCC3)[C@@H]15)C[C@@H]2COCc1ccccc1
+  RL_Gen_39:
+    active: false
+    smiles: N#CC(CCCN1CCC(O)(c2ccccc2)CC1)(c1ccccc1)c1ccccc1
+  RL_Gen_40_isoA:
+    active: false
+    smiles: O[C@](CCN1CCCCC1)(c1ccsc1)c1cccs1
+  RL_Gen_40_isoB:
+    active: false
+    smiles: O[C@@](CCN1CCCCC1)(c1ccsc1)c1cccs1
+  RL_Gen_41:
+    active: false
+    smiles: c1ccc(C2CCC3(CC2)OOC2(OO3)C3CC4CC(C3)CC2C4)cc1
+  RL_Gen_42:
+    active: false
+    smiles: c1cc(CNn2cnnc2)co1
+  RL_Gen_43:
+    active: false
+    smiles: CC(O)(Cn1cncn1)C(O)(Cn1cncn1)c1ccc(F)cc1F
+  RL_Gen_44:
+    active: false
+    smiles: CCCN(CC1CCCO1)C(=O)C1OC(n2cnc3c(=N)[nH]cnc32)C(O)C1O
+  RL_Gen_45:
+    active: false
+    smiles: CCOc1ccccc1CC(=O)OC1OC2OC3(C)CCC4C(C)CCC(C1C)C24OO3
+  RL_Gen_46:
+    active: false
+    smiles: COc1ccc(-c2nsc(C(C)(O)c3ccccc3)n2)cc1
+  RL_Gen_47:
+    active: false
+    smiles: c1cc2c(cn1)cc(-c1cc[nH]n1)n2CC1CCCCC1
+  RL_Gen_48:
+    active: false
+    smiles: Clc1nc(-c2ccsc2)nc2c1nc(-c1ccccc1)n2CC1CCCO1
+  RL_Gen_49:
+    active: false
+    smiles: CC(O)(c1ccc(-c2ccccc2)nc1)c1cc2nccnc2cn1
+  RL_Gen_50:
+    active: false
+    smiles: c1ccc(OCc2nn3c(-c4ccccc4)nnc3s2)cc1
+  R_Warfarin_ref:
+    active: true
+    smiles: CC(=O)C[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  S_Warfarin_ref:
+    active: true
+    smiles: CC(=O)C[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  dimethoxy_23_R:
+    active: true
+    smiles: CC(=O)N[C@H](c1c(OC)c(OC)ccc1)C2=C([O-])C3=CC=CC=C3OC2=O
+  dimethoxy_23_S:
+    active: true
+    smiles: CC(=O)N[C@@H](c1c(OC)c(OC)ccc1)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_bromo_R:
+    active: true
+    smiles: CC(=O)N[C@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_bromo_S:
+    active: true
+    smiles: CC(=O)N[C@@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_nitro_R:
+    active: true
+    smiles: CC(=O)N[C@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O
+  m_nitro_S:
+    active: true
+    smiles: CC(=O)N[C@@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O
+  p_nitro_R:
+    active: true
+    smiles: CC(=O)N[C@H](C1=CC=C([N+](=O)[O-])C=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  p_nitro_S:
+    active: true
+    smiles: CC(=O)N[C@@H](C1=CC=C([N+](=O)[O-])C=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+project_name: Coumarin_Derivatives_Anticoagulant_Study
+receptors:
+  HSA:
+    active: false
+    chain: A
+    flexible_residues:
+    - A:212
+    - A:217
+    - A:236
+    - A:220
+    force_center:
+    - 32.24
+    - 14.1
+    - 9.29
+    force_size:
+    - 15.0
+    - 15.0
+    - 15.0
+    native_ligand_resname: RWF
+    padding: 5.0
+    pdb_id: 1H9Z
+  VKORC1_Human:
+    active: true
+    chain: A
+    flexible_residues:
+    - A:217
+    - A:276
+    - A:269
+    - A:272
+    native_ligand_resname: SWF
+    padding: 6.0
+    pdb_id: 6WV3
+  VKORC1_Reduced:
+    active: false
+    chain: A
+    flexible_residues:
+    - A:217
+    - A:276
+    - A:269
+    - A:272
+    native_ligand_resname: SWF
+    padding: 6.0
+    pdb_id: 6WV3

@@ -1,0 +1,80 @@
+Initializing Multi-Task GNN Pipeline for Coagulation & ADMET...
+Hardware routed to: cpu
+Loading dataset from data/coagulation_admet_multi_task.csv...
+Successfully featurized 18966 molecules.
+Performing Bemis-Murcko Scaffold Split...
+Dataset split - Train: 15172, Val: 1897, Test: 1897
+
+Starting Training Loop...
+Epoch 001 [warmup] | Train Loss (Masked MSE): 4.5842 | Val Loss: 1.8228 | Val RMSE: 1.3616 | Val R2: 0.1022
+Epoch 005 [warmup] | Train Loss (Masked MSE): 2.4038 | Val Loss: 1.8916 | Val RMSE: 1.3902 | Val R2: 0.0641
+Epoch 010 [warmup] | Train Loss (Masked MSE): 2.2382 | Val Loss: 1.9372 | Val RMSE: 1.4052 | Val R2: 0.0438
+Epoch 015 [warmup] | Train Loss (Masked MSE): 2.0964 | Val Loss: 1.8510 | Val RMSE: 1.3709 | Val R2: 0.0899
+Epoch 016 | New best Val Loss: 1.8150 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 020 | New best Val Loss: 1.7977 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 020 | Train Loss (Masked MSE): 2.0331 | Val Loss: 1.7977 | Val RMSE: 1.3551 | Val R2: 0.1108
+Epoch 022 | New best Val Loss: 1.7873 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 024 | New best Val Loss: 1.7645 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 025 | Train Loss (Masked MSE): 2.0119 | Val Loss: 1.8993 | Val RMSE: 1.3859 | Val R2: 0.0699
+Epoch 030 | Train Loss (Masked MSE): 1.9189 | Val Loss: 1.8269 | Val RMSE: 1.3572 | Val R2: 0.1080
+Epoch 031 | New best Val Loss: 1.7311 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 033 | New best Val Loss: 1.7106 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 034 | New best Val Loss: 1.6941 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 035 | Train Loss (Masked MSE): 1.8758 | Val Loss: 1.7456 | Val RMSE: 1.3357 | Val R2: 0.1361
+Epoch 036 | New best Val Loss: 1.6264 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 040 | Train Loss (Masked MSE): 1.8090 | Val Loss: 1.6452 | Val RMSE: 1.2896 | Val R2: 0.1947
+Epoch 042 | New best Val Loss: 1.5644 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 045 | New best Val Loss: 1.5162 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 045 | Train Loss (Masked MSE): 1.6978 | Val Loss: 1.5162 | Val RMSE: 1.2442 | Val R2: 0.2504
+Epoch 050 | New best Val Loss: 1.5099 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 050 | Train Loss (Masked MSE): 1.6554 | Val Loss: 1.5099 | Val RMSE: 1.2370 | Val R2: 0.2590
+Epoch 051 | New best Val Loss: 1.4479 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 052 | New best Val Loss: 1.4386 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 055 | Train Loss (Masked MSE): 1.5677 | Val Loss: 1.4801 | Val RMSE: 1.2267 | Val R2: 0.2713
+Epoch 056 | New best Val Loss: 1.4092 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 057 | New best Val Loss: 1.3847 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 058 | New best Val Loss: 1.3545 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 060 | Train Loss (Masked MSE): 1.5106 | Val Loss: 1.3921 | Val RMSE: 1.1888 | Val R2: 0.3156
+Epoch 062 | New best Val Loss: 1.3177 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 065 | New best Val Loss: 1.2970 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 065 | Train Loss (Masked MSE): 1.4212 | Val Loss: 1.2970 | Val RMSE: 1.1490 | Val R2: 0.3607
+Epoch 070 | Train Loss (Masked MSE): 1.3484 | Val Loss: 1.3690 | Val RMSE: 1.1780 | Val R2: 0.3281
+Epoch 071 | New best Val Loss: 1.2821 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 072 | New best Val Loss: 1.2448 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 074 | New best Val Loss: 1.2188 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 075 | Train Loss (Masked MSE): 1.2945 | Val Loss: 1.2878 | Val RMSE: 1.1457 | Val R2: 0.3644
+Epoch 076 | New best Val Loss: 1.2056 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 080 | Train Loss (Masked MSE): 1.2711 | Val Loss: 1.2418 | Val RMSE: 1.1230 | Val R2: 0.3894
+Epoch 084 | New best Val Loss: 1.1619 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 085 | Train Loss (Masked MSE): 1.1756 | Val Loss: 1.2443 | Val RMSE: 1.1291 | Val R2: 0.3826
+Epoch 090 | New best Val Loss: 1.1545 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 090 | Train Loss (Masked MSE): 1.1521 | Val Loss: 1.1545 | Val RMSE: 1.0872 | Val R2: 0.4277
+Epoch 095 | Train Loss (Masked MSE): 1.1230 | Val Loss: 1.1910 | Val RMSE: 1.1023 | Val R2: 0.4116
+Epoch 096 | New best Val Loss: 1.1241 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 098 | New best Val Loss: 1.1022 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 100 | Train Loss (Masked MSE): 1.0610 | Val Loss: 1.1572 | Val RMSE: 1.0850 | Val R2: 0.4299
+Epoch 105 | New best Val Loss: 1.0993 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 105 | Train Loss (Masked MSE): 1.0248 | Val Loss: 1.0993 | Val RMSE: 1.0594 | Val R2: 0.4565
+Epoch 109 | New best Val Loss: 1.0687 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 110 | Train Loss (Masked MSE): 1.0091 | Val Loss: 1.1145 | Val RMSE: 1.0626 | Val R2: 0.4532
+Epoch 115 | Train Loss (Masked MSE): 0.9614 | Val Loss: 1.0884 | Val RMSE: 1.0515 | Val R2: 0.4646
+Epoch 116 | New best Val Loss: 1.0513 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 120 | Train Loss (Masked MSE): 0.9442 | Val Loss: 1.1281 | Val RMSE: 1.0702 | Val R2: 0.4454
+Epoch 125 | Train Loss (Masked MSE): 0.9127 | Val Loss: 1.0735 | Val RMSE: 1.0445 | Val R2: 0.4717
+Epoch 128 | New best Val Loss: 1.0291 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 130 | Train Loss (Masked MSE): 0.8984 | Val Loss: 1.1128 | Val RMSE: 1.0592 | Val R2: 0.4568
+Epoch 135 | Train Loss (Masked MSE): 0.8647 | Val Loss: 1.1078 | Val RMSE: 1.0570 | Val R2: 0.4590
+Epoch 140 | Train Loss (Masked MSE): 0.8632 | Val Loss: 1.0782 | Val RMSE: 1.0464 | Val R2: 0.4698
+Epoch 144 | Learning rate reduced: 1.00e-03 -> 5.00e-04
+Epoch 145 | Train Loss (Masked MSE): 0.8141 | Val Loss: 1.0590 | Val RMSE: 1.0351 | Val R2: 0.4812
+Epoch 147 | New best Val Loss: 1.0073 -> checkpoint saved to coagulation_admet_gnn.pth
+Epoch 150 | Train Loss (Masked MSE): 0.7999 | Val Loss: 1.0345 | Val RMSE: 1.0224 | Val R2: 0.4938
+
+Loaded best model (Val Loss: 1.0073) from coagulation_admet_gnn.pth for final evaluation.
+
+--- Final Test Set Evaluation (Valid Assays Only) ---
+Test RMSE: 1.0014
+Test MAE:  0.6968
+Test R2:   0.6020
+Best model already saved to coagulation_admet_gnn.pth
+Training history saved to publication/data/gnn_training_history.json

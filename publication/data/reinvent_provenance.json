@@ -1,0 +1,32 @@
+{
+  "canonical_reinvent_config": "configs/coumarin_rl.toml",
+  "canonical_generation_csv": "REINVENT4/coumarin_generation_1.csv",
+  "gnn_scorer": {
+    "executable": "python gnn_predict.py",
+    "checkpoint": "coagulation_admet_gnn.pth",
+    "endpoint": "Pred_VKORC1_pXC50",
+    "weight": 2.5,
+    "sigmoid_low": 5.0,
+    "sigmoid_high": 9.0
+  },
+  "runs": [
+    {
+      "id": "reinvent_gnn_staged_learning",
+      "description": "Primary staged-learning run with GNN ExternalProcess (SA 1.5, QED 1.0, MW 0.5, GNN 2.5)",
+      "config_source": "configs/coumarin_rl.toml",
+      "generation_csv": "REINVENT4/coumarin_generation_1.csv",
+      "has_pred_vkorc1_column": true,
+      "agent_checkpoint": "coumarin_agent.chkpt",
+      "note": "Use this CSV for Figure 3 and inject_ai_leads.py"
+    },
+    {
+      "id": "reinvent_pilot_sa_qed_mw",
+      "description": "Early pilot export without GNN component",
+      "config_export": "coumarin_rl.json",
+      "generation_csv": "coumarin_generation_1.csv",
+      "has_pred_vkorc1_column": false,
+      "note": "Superseded by REINVENT4/coumarin_generation_1.csv; retained for audit only"
+    }
+  ],
+  "reconciliation": "Manuscript and Figure 3 cite the GNN-scored run (REINVENT4/coumarin_generation_1.csv). Root coumarin_rl.json reflects an earlier SA/QED/MW-only pilot."
+}

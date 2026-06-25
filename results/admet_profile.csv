@@ -1,9 +1,0 @@
-Name,MW,LogP,HBD,HBA,TPSA,RotBonds,QED,BBB_Penetrant,GI_Absorption,Egan_Pass,Lipinski
-S_Warfarin_ref,307.33,2.978,0,4,70.34,4,0.6947,Yes,High,True,True
-R_Warfarin_ref,307.33,2.978,0,4,70.34,4,0.6947,Yes,High,True,True
-BENZ_R,308.31,2.092,1,4,82.37,3,0.7511,Yes,High,True,True
-BENZ_S,308.31,2.092,1,4,82.37,3,0.7511,Yes,High,True,True
-m_nitro_R,353.31,2.0,1,6,125.51,4,0.4342,No,High,True,True
-m_nitro_S,353.31,2.0,1,6,125.51,4,0.4342,No,High,True,True
-m_bromo_R,387.21,2.855,1,4,82.37,3,0.7011,Yes,High,True,True
-m_bromo_S,387.21,2.855,1,4,82.37,3,0.7011,Yes,High,True,True

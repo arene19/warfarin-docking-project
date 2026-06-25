@@ -1,25 +1,98 @@
-# Python environment
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.Python
 
-# Heavy Bio Data (Keep repository clean)
+# Virtual environments (never commit)
+venv/
+.venv/
+.docx_venv/
+publication/.venv/
+env/
+**/site-packages/
+
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+*:Zone.Identifier
+
+# Heavy or machine-local outputs (regenerate locally)
+results/
 inputs/
 outputs/
-results/
-old_file_backup/
 logs/
 figures/
+old_file_backup/
 vkor_docking/
 proteins/
 ligands/
 ligands_archive/
 pdbqt_ligands/
 pdbqt_receptors/
+mistakes/
+cleanup_unsure/
 
-# System specific junk
+# Large third-party install (install REINVENT4 separately)
+REINVENT4/
+
+# Structures and docking artifacts
 *.pdb
 *.pdbqt
-*.csv
 *.sdf
-*:Zone.Identifier
+*.mol2
+
+# MD starting structures (must ship to PC for GROMACS)
+!md_poses/
+!md_poses/**/*
+!md_poses/**/*.pdb
+
+# REINVENT run artifacts
+coumarin_generation_*.csv
+coumarin_rl.json
+coumarin_agent.chkpt
+tb_logs/
+reinvent.log
+
+# Scratch / dumps
+full_project_code.txt
+GNN.txt
+analysis.txt
+gather_code.py
+
+# Checkpoints (optional: remove line to version the trained model)
+# coagulation_admet_gnn.pth
+vkorc1_single_task_gnn.pth
+
+# Word temp
+~$*.docx
+
+# Keep tracked for publication
+!publication/output/**
+!publication/data/**
+!configs/**
+!manuscript_draft.md
+!manuscript_draft.docx
+!deposition/manifest.json
+!deposition/package/**
+!scripts/**
+!gnn_model.py
+!config_utils.py
+!data/coagulation_admet_multi_task.csv
+
+# Local-only / scratch
+*.bak_*
+coumarin_rl.log
+.streamlit/
+validation/
+figures_exh32/
+tb_logs_0/
+
+# Large ML artifact (regenerate locally; exceeds GitHub 100MB limit)
+publication/data/morgan_rf/morgan_rf_models.joblib

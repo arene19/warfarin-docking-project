@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-06-23T01:32:25.333779+00:00",
+  "files": [
+    "data/coagulation_admet_multi_task.csv",
+    "models/coagulation_admet_gnn.pth",
+    "metrics/gnn_evaluation_report.json",
+    "metrics/gnn_training_history.json",
+    "docking/flexible_redock_spotcheck.csv",
+    "reinvent/reinvent_provenance.json",
+    "reinvent/coumarin_rl.toml",
+    "reinvent/coumarin_generation_1.csv",
+    "docking/VKORC1_Human_screening_results.csv",
+    "docking/interaction_profile.csv",
+    "docking/admet_profile.csv",
+    "publication_output",
+    "README_DEPOSITION.txt"
+  ],
+  "missing": [
+    "publication/data/gnn_scaffold_split.json"
+  ]
+}

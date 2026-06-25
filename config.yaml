@@ -1,37 +1,33 @@
-project_name: "Coumarin_Derivatives_Anticoagulant_Study"
-
 docking_params:
-  exhaustiveness: 32
-  num_modes: 20
+  dock_timeout_s: 900
   energy_range: 3.0
-
+  exhaustiveness: 20
+  min_rmsd: 1.0
+  n_cpu: null
+  num_conformers: 20
+  num_modes: 9
+ligands:
+  BENZ_R: CC(=O)N[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  BENZ_S: CC(=O)N[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  R_Warfarin_ref: CC(=O)C[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  S_Warfarin_ref: CC(=O)C[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  dimethoxy_23_R: CC(=O)N[C@H](c1c(OC)c(OC)ccc1)C2=C([O-])C3=CC=CC=C3OC2=O
+  dimethoxy_23_S: CC(=O)N[C@@H](c1c(OC)c(OC)ccc1)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_bromo_R: CC(=O)N[C@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_bromo_S: CC(=O)N[C@@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O
+  m_nitro_R: CC(=O)N[C@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O
+  m_nitro_S: CC(=O)N[C@@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O
+  p_nitro_R: CC(=O)N[C@H](C1=CC=C([N+](=O)[O-])C=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+  p_nitro_S: CC(=O)N[C@@H](C1=CC=C([N+](=O)[O-])C=C1)C2=C([O-])C3=CC=CC=C3OC2=O
+project_name: Coumarin_Derivatives_Anticoagulant_Study
 receptors:
   VKORC1_Human:
-    pdb_id: "6WV3"
-    chain: "A"
-    native_ligand_resname: "SWF"
+    chain: A
+    flexible_residues:
+    - A:217
+    - A:276
+    - A:269
+    - A:272
+    native_ligand_resname: SWF
     padding: 6.0
-    force_center: [-9.83, 26.82, 55.76]  # Your original baseline center
-    force_size: [15.0,15.0,15.0]       # Your original baseline size
-    description: "Human VKORC1 bound to Warfarin (True Target)"
-  HSA:
-    pdb_id: "1H9Z"
-    chain: "A"
-    native_ligand_resname: "RWF"
-    padding: 5.0
-    force_center: [32.24, 14.10, 9.29]   # Your original baseline center
-    force_size: [15.0, 15.0, 15.0]       # Your original baseline size
-    description: "Human Serum Albumin"
-
-ligands:
-  # Reference Control Standards
-  S_Warfarin_ref: "CC(=O)C[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O"
-  R_Warfarin_ref: "CC(=O)C[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O"
-  
-  # Novel Substituted Synthesis targets
-  BENZ_R: "CC(=O)N[C@@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O"
-  BENZ_S: "CC(=O)N[C@H](C1=CC=CC=C1)C2=C([O-])C3=CC=CC=C3OC2=O"
-  m_nitro_R: "CC(=O)N[C@@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O"
-  m_nitro_S: "CC(=O)N[C@H](C1=CC(=CC=C1)[N+](=O)[O-])C2=C([O-])C3=CC=CC=C3OC2=O"
-  m_bromo_R: "CC(=O)N[C@@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O"
-  m_bromo_S: "CC(=O)N[C@H](C1=CC(=CC=C1)Br)C2=C([O-])C3=CC=CC=C3OC2=O"
+    pdb_id: 6WV3

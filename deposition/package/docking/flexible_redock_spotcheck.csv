@@ -1,0 +1,16 @@
+ligand_name,affinity_training_kcal_mol,affinity_redock_kcal_mol,delta_kcal_mol,category
+S_Warfarin_ref,-10.924,-10.891,0.033,reference
+R_Warfarin_ref,-11.294,-11.276,0.018,reference
+BENZ_S,-10.532,-10.501,0.031,reference
+BENZ_R,-11.231,-11.198,0.033,reference
+p_nitro_S,-11.768,-11.742,0.026,reference
+p_nitro_R,-12.123,-12.091,0.032,reference
+RL_Gen_37,-12.244,-12.198,0.046,RL_Gen
+RL_Gen_22,-11.545,-11.512,0.033,RL_Gen
+RL_Gen_29,-10.969,-10.921,0.048,RL_Gen
+RL_Gen_07,-10.921,-10.884,0.037,RL_Gen
+RL_Gen_26,-10.902,-10.847,0.055,RL_Gen
+RL_Gen_31,-10.184,-9.662,0.522,RL_Gen
+RL_Gen_06,-9.412,-9.298,0.114,RL_Gen
+RL_Gen_15,-8.955,-8.801,0.154,RL_Gen
+RL_Gen_03,-7.812,-7.691,0.121,RL_Gen
