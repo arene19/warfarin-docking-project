@@ -1,0 +1,42 @@
+; NVT equilibration — 125 ps at 310 K (membrane ER-like)
+; Requires: posre.itp on protein backbone + ligand heavy atoms (-DPOSRES in top)
+
+define              = -DPOSRES
+integrator          = md
+dt                  = 0.002
+nsteps              = 62500
+nstxout-compressed  = 5000
+nstenergy           = 1000
+nstlog              = 1000
+continuation        = no
+constraint_algorithm = lincs
+constraints         = h-bonds
+lincs_iter          = 1
+lincs_order         = 4
+
+cutoff-scheme       = Verlet
+rlist               = 1.2
+rcoulomb            = 1.2
+rvdw                = 1.2
+coulombtype         = PME
+pme_order           = 4
+fourierspacing      = 0.12
+pbc                 = xyz
+
+tcoupl              = V-rescale
+tc-grps             = PROTEIN SOLU MEMB
+tau_t               = 1.0 1.0 1.0
+ref_t               = 310 310 310
+
+; CHARMM-GUI index groups: adjust names to match your index.ndx after solvation
+; If groups differ, run: gmx make_ndx -f step5_input.gro -o index.ndx
+; Typical CHARMM-GUI names: Protein, SOLU (ions+water in bulk), MEMB (lipids)
+
+gen_vel             = yes
+gen_temp            = 310
+
+; GPU
+nbgpu               = yes
+pme_gpu             = yes
+bondedgpu           = yes
+updategpu           = yes

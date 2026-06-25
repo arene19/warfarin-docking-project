@@ -1,0 +1,7 @@
+system_id,run_order,complex_pdb,protein_pdb,ligand_pdb,ligand_sdf,cgenff_risk,pilot_ns,production_ns
+S_Warfarin_ref,1,systems/S_Warfarin_ref/charmm_gui/complex.pdb,systems/S_Warfarin_ref/charmm_gui/protein.pdb,systems/S_Warfarin_ref/charmm_gui/ligand.pdb,systems/S_Warfarin_ref/ligand_params/ligand.sdf,low,20,100
+p_nitro_R,2,systems/p_nitro_R/charmm_gui/complex.pdb,systems/p_nitro_R/charmm_gui/protein.pdb,systems/p_nitro_R/charmm_gui/ligand.pdb,systems/p_nitro_R/ligand_params/ligand.sdf,medium,20,100
+p_nitro_S,3,systems/p_nitro_S/charmm_gui/complex.pdb,systems/p_nitro_S/charmm_gui/protein.pdb,systems/p_nitro_S/charmm_gui/ligand.pdb,systems/p_nitro_S/ligand_params/ligand.sdf,medium,20,100
+dimethoxy_23_S,4,systems/dimethoxy_23_S/charmm_gui/complex.pdb,systems/dimethoxy_23_S/charmm_gui/protein.pdb,systems/dimethoxy_23_S/charmm_gui/ligand.pdb,systems/dimethoxy_23_S/ligand_params/ligand.sdf,medium,20,100
+RL_Gen_37,5,systems/RL_Gen_37/charmm_gui/complex.pdb,systems/RL_Gen_37/charmm_gui/protein.pdb,systems/RL_Gen_37/charmm_gui/ligand.pdb,systems/RL_Gen_37/ligand_params/ligand.sdf,high,20,100
+RL_Gen_29_isoA,6,systems/RL_Gen_29_isoA/charmm_gui/complex.pdb,systems/RL_Gen_29_isoA/charmm_gui/protein.pdb,systems/RL_Gen_29_isoA/charmm_gui/ligand.pdb,systems/RL_Gen_29_isoA/ligand_params/ligand.sdf,high,20,100

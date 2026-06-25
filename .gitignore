@@ -96,3 +96,7 @@ tb_logs_0/
 
 # Large ML artifact (regenerate locally; exceeds GitHub 100MB limit)
 publication/data/morgan_rf/morgan_rf_models.joblib
+
+# GROMACS MD outputs (local PC only)
+md_gromacs/runs/
+md_gromacs/charmm_gui_export/

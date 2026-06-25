@@ -1,0 +1,36 @@
+; NPT release — short equilibration without POSRES (250 ps)
+
+integrator          = md
+dt                  = 0.002
+nsteps              = 125000
+nstxout-compressed  = 5000
+nstenergy           = 1000
+nstlog              = 1000
+continuation        = yes
+constraint_algorithm = lincs
+constraints         = h-bonds
+
+cutoff-scheme       = Verlet
+rlist               = 1.2
+rcoulomb            = 1.2
+rvdw                = 1.2
+coulombtype         = PME
+pme_order           = 4
+fourierspacing      = 0.12
+pbc                 = xyz
+
+tcoupl              = V-rescale
+tc-grps             = PROTEIN SOLU MEMB
+tau_t               = 1.0 1.0 1.0
+ref_t               = 310 310 310
+
+pcoupl              = Parrinello-Rahman
+pcoupltype          = semiisotropic
+tau_p               = 5.0 5.0
+ref_p               = 1.0 1.0
+compressibility     = 4.5e-5 4.5e-5
+
+nbgpu               = yes
+pme_gpu             = yes
+bondedgpu           = yes
+updategpu           = yes
