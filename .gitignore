@@ -53,6 +53,13 @@ REINVENT4/
 !md_poses/**/*
 !md_poses/**/*.pdb
 
+# CHARMM-GUI / CGenFF inputs for membrane MD
+!md_gromacs/systems/
+!md_gromacs/systems/**/*
+!md_gromacs/systems/**/*.pdb
+!md_gromacs/systems/**/*.sdf
+!md_gromacs/systems/**/*.mol2
+
 # REINVENT run artifacts
 coumarin_generation_*.csv
 coumarin_rl.json
