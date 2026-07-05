@@ -43,7 +43,7 @@ Follow [`deposition/ZENODO_UPLOAD.md`](deposition/ZENODO_UPLOAD.md):
 
 ## 4. Manuscript and Word export
 
-Data Availability in `vkorc1_integrated_workflow_manuscript.md` cites Zenodo **https://doi.org/10.5281/zenodo.21208445** (version 1.0). After any manuscript edit, regenerate Word:
+Data Availability in `vkorc1_integrated_workflow_manuscript.md` cites Zenodo **https://doi.org/10.5281/zenodo.21209303** (version 1.0.1). After any manuscript edit, regenerate Word:
 
 ```bash
 python publication/md_to_docx.py

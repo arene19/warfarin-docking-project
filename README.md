@@ -83,7 +83,7 @@ python scripts/validate_reinvent_provenance.py
 - REINVENT run provenance: `publication/data/reinvent_provenance.json`
 - Manuscript tables/figures: `publication/output/tables/`, `publication/output/figures/`
 - Internal QC (reference ligands, not in manuscript): `publication/output/internal_qc/`
-- Zenodo bundle: `deposition/package/` (via `prepare_deposition.py`); archived at **https://doi.org/10.5281/zenodo.21208445** (version 1.0)
+- Zenodo bundle: `deposition/package/` (via `prepare_deposition.py`); archived at **https://doi.org/10.5281/zenodo.21209303** (version 1.0.1; all versions: https://doi.org/10.5281/zenodo.21208444)
 - GitHub release tag: `v1.0-submission`
 - Legacy multi-receptor rigid docking summary: `docking_results.csv` (not used in manuscript; flexible RL screening in deposition)
 

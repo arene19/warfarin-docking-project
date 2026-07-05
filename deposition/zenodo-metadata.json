@@ -4,7 +4,8 @@
   "upload_type": "dataset",
   "access_right": "open",
   "license": "MIT",
-  "doi": "10.5281/zenodo.21208445",
+  "doi": "10.5281/zenodo.21209303",
+  "version": "1.0.1",
   "conceptdoi": "10.5281/zenodo.21208444",
   "creators": [
     {

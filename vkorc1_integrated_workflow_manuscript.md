@@ -298,7 +298,7 @@ We developed and benchmarked a multi-task GAT [3]-based active-learning **comput
 
 ## Data and Code Availability
 
-Source code is available at [https://github.com/arene19/warfarin-docking-project](https://github.com/arene19/warfarin-docking-project) (release tag v1.0-submission). A versioned Zenodo archive containing the frozen training master, trained GNN weights, Murcko scaffold split, RL_Gen docking and ADMET tables, manuscript figures and tables, membrane MD analysis summaries, REINVENT4 configuration and provenance metadata, and reproduction scripts is available at **https://doi.org/10.5281/zenodo.21208445** (version 1.0). Reference-ligand QC tables (stereoselectivity, docking enrichment, receptor validation) are included in the deposition bundle. The REINVENT4 prior model is documented in supplementary provenance metadata but is not redistributed.
+Source code is available at [https://github.com/arene19/warfarin-docking-project](https://github.com/arene19/warfarin-docking-project) (release tag v1.0-submission). A versioned Zenodo archive containing the frozen training master, trained GNN weights, Murcko scaffold split, RL_Gen docking and ADMET tables, manuscript figures and tables, membrane MD analysis summaries, REINVENT4 configuration and provenance metadata, and reproduction scripts is available at **https://doi.org/10.5281/zenodo.21209303** (version 1.0.1). All versions: https://doi.org/10.5281/zenodo.21208444. Reference-ligand QC tables (stereoselectivity, docking enrichment, receptor validation) are included in the deposition bundle. The REINVENT4 prior model is documented in supplementary provenance metadata but is not redistributed.
 
 ---
 

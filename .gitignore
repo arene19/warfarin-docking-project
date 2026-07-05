@@ -90,7 +90,7 @@ vkorc1_single_task_gnn.pth
 !deposition/ZENODO_UPLOAD.md
 !deposition/zenodo-metadata.json
 !deposition/prepare_deposition.py
-# Full deposition/package/ is on Zenodo (DOI 10.5281/zenodo.21208445), not in git
+# Full deposition/package/ is on Zenodo (DOI 10.5281/zenodo.21209303), not in git
 deposition/package/
 !scripts/**
 !gnn_model.py
