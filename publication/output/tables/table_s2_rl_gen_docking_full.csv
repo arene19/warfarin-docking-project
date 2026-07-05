@@ -1,4 +1,4 @@
-Ligand,dG_kcal_mol,pXC50_derived,success,runtime_s
+Ligand,dG_kcal_mol,pXC50_Vina_derived,success,runtime_s
 RL_Gen_37,-12.244,9.003,True,23.956362009048465
 RL_Gen_22,-11.545,8.489,True,40.33030438423157
 RL_Gen_29_isoA,-11.419,8.396,True,38.14039421081543

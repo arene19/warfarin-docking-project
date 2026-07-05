@@ -1,0 +1,163 @@
+{
+  "target_name": "VKORC1_Human",
+  "overall_pass": true,
+  "checks": [
+    {
+      "check_id": "pdb_file",
+      "label": "PDB structure available",
+      "passed": true,
+      "detail": "proteins/raw/6WV3.pdb",
+      "value": null
+    },
+    {
+      "check_id": "native_ligand",
+      "label": "Native ligand found in PDB",
+      "passed": true,
+      "detail": "SWF on chain A res 404 (23 heavy atoms)",
+      "value": {
+        "chain": "A",
+        "resnum": 404,
+        "resname": "SWF",
+        "n_atoms": 23,
+        "n_heavy": 23,
+        "centroid": [
+          -9.827303886413574,
+          26.818391799926758,
+          55.760005950927734
+        ]
+      }
+    },
+    {
+      "check_id": "grid_box",
+      "label": "Grid box coordinates",
+      "passed": true,
+      "detail": "auto from SWF + 6.0 \u00c5 padding | center=[-9.8, 26.8, 55.8] size=[19.5, 17.3, 20.3]",
+      "value": {
+        "center": [
+          -9.827303886413574,
+          26.818391799926758,
+          55.760005950927734
+        ],
+        "size": [
+          19.527000427246094,
+          17.295000076293945,
+          20.320999145507812
+        ]
+      }
+    },
+    {
+      "check_id": "optional_pocket",
+      "label": "Pocket residues near native ligand (\u22645 \u00c5)",
+      "passed": true,
+      "detail": "LEU262(3.52\u00c5), CYS277(4.28\u00c5), ASN222(4.56\u00c5), TYR281(4.67\u00c5)",
+      "value": [
+        {
+          "chain": "A",
+          "resnum": 262,
+          "resname": "LEU",
+          "distance_A": 3.52
+        },
+        {
+          "chain": "A",
+          "resnum": 277,
+          "resname": "CYS",
+          "distance_A": 4.28
+        },
+        {
+          "chain": "A",
+          "resnum": 222,
+          "resname": "ASN",
+          "distance_A": 4.56
+        },
+        {
+          "chain": "A",
+          "resnum": 281,
+          "resname": "TYR",
+          "distance_A": 4.67
+        }
+      ]
+    },
+    {
+      "check_id": "flex_residues",
+      "label": "Flexible residues exist in structure",
+      "passed": true,
+      "detail": "4/4 valid",
+      "value": null
+    },
+    {
+      "check_id": "cache_protonated_pdb",
+      "label": "Protonated receptor PDB",
+      "passed": true,
+      "detail": "proteins/protonated/VKORC1_Human_chainA_protonated.pdb",
+      "value": null
+    },
+    {
+      "check_id": "cache_receptor_pdbqt",
+      "label": "Receptor PDBQT",
+      "passed": true,
+      "detail": "pdbqt_receptors/VKORC1_Human_chainA_protonated.pdbqt",
+      "value": null
+    },
+    {
+      "check_id": "cache_flex",
+      "label": "Flexible receptor cache (rigid + flex PDBQT)",
+      "passed": true,
+      "detail": "Present",
+      "value": null
+    },
+    {
+      "check_id": "rmsd",
+      "label": "Re-dock RMSD vs crystal SWF",
+      "passed": true,
+      "detail": "1.64 \u00c5 (threshold < 2.0 \u00c5) using S_Warfarin_ref",
+      "value": 1.643
+    },
+    {
+      "check_id": "pocket_contacts",
+      "label": "Docked pose contacts pocket (\u22644 \u00c5 to native-neighbor residues)",
+      "passed": true,
+      "detail": "Contacts: CYS277(2.43\u00c5)",
+      "value": [
+        "CYS277(2.43\u00c5)"
+      ]
+    },
+    {
+      "check_id": "optional_contact_A_222",
+      "label": "Key residue: Asn222 (UniProt Asn80)",
+      "passed": false,
+      "detail": "min heavy-atom distance = 7.60 \u00c5 (\u2264 4.0 \u00c5 = contact)",
+      "value": 7.6
+    },
+    {
+      "check_id": "optional_contact_A_277",
+      "label": "Key residue: Cys277 (disulfide pocket wall)",
+      "passed": true,
+      "detail": "min heavy-atom distance = 2.43 \u00c5 (\u2264 4.0 \u00c5 = contact)",
+      "value": 2.43
+    },
+    {
+      "check_id": "optional_contact_A_262",
+      "label": "Key residue: Leu262",
+      "passed": false,
+      "detail": "min heavy-atom distance = 5.10 \u00c5 (\u2264 4.0 \u00c5 = contact)",
+      "value": 5.1
+    },
+    {
+      "check_id": "optional_plip",
+      "label": "PLIP interaction profile",
+      "passed": true,
+      "detail": "H-bonds: ASN80(2.82\u00c5), SER81(2.87\u00c5), TYR139(3.44\u00c5) | Hydrophobic: ASN80(2.84\u00c5), ILE123(3.94\u00c5), LEU120(3.69\u00c5), PHE63(3.52\u00c5), THR138(3.58\u00c5), TRP59(3.41\u00c5), VAL134(3.60\u00c5), VAL54(3.75\u00c5)",
+      "value": {
+        "Receptor": "VKORC1_Human_chainA_protonated",
+        "Ligand": "S_Warfarin_ref",
+        "Num_H_Bonds": 3,
+        "H_Bond_Residues": "ASN80(2.82\u00c5), SER81(2.87\u00c5), TYR139(3.44\u00c5)",
+        "Num_Hydrophobic": 8,
+        "Hydrophobic_Residues": "ASN80(2.84\u00c5), ILE123(3.94\u00c5), LEU120(3.69\u00c5), PHE63(3.52\u00c5), THR138(3.58\u00c5), TRP59(3.41\u00c5), VAL134(3.60\u00c5), VAL54(3.75\u00c5)",
+        "Num_Pi_Stacking": 0,
+        "Pi_Stacking_Residues": "None"
+      }
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Fallback VKORC1 H-bond residue map (RL_Gen_37 pose). Prefer auto-generated analysis/hbond_residue_map.json per system.",
+  "residues": [
+    {"plip_label": "ASN80", "resname": "ASN", "ref_resid": 217, "gmx_resid": 217},
+    {"plip_label": "SER81", "resname": "SER", "ref_resid": 218, "gmx_resid": 218},
+    {"plip_label": "TYR139", "resname": "TYR", "ref_resid": 256, "gmx_resid": 256},
+    {"plip_label": "PHE55", "resname": "PHE", "ref_resid": 192, "gmx_resid": 192},
+    {"plip_label": "TRP59", "resname": "TRP", "ref_resid": 196, "gmx_resid": 196},
+    {"plip_label": "THR138", "resname": "THR", "ref_resid": 275, "gmx_resid": 275},
+    {"plip_label": "VAL134", "resname": "VAL", "ref_resid": 191, "gmx_resid": 191}
+  ]
+}

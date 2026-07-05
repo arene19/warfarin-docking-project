@@ -1,0 +1,11 @@
+{
+  "prior_path": "REINVENT4/models/reinvent.prior",
+  "size_bytes": 23226277,
+  "hash_id": "173568c36e1fc3d95cab289c7d31ce0b",
+  "hash_id_format": "xxhash.xxh3_128_hex 3.4.1",
+  "model_id": "55d68f8a81c04f5a86304ebe1723a0ea",
+  "original_data_source": "ChEMBL 25",
+  "reinvent_version": "4.7.15",
+  "reinvent_git_commit": "f9486d7ba26d7b3eaa1eb783eb404f041ccea64d",
+  "note": "Prior ships with a standard REINVENT4 clone; not bundled in Zenodo due to size. Verify hash after checkout."
+}

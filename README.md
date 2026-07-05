@@ -19,7 +19,7 @@ Multi-task graph neural network (GAT), flexible AutoDock Vina docking, active-le
 ├── coagulation_admet_gnn.pth      # Trained checkpoint (v2 format)
 ├── deposition/prepare_deposition.py # Bundle Zenodo upload package
 ├── publication/                   # Figures, tables, Word export
-└── manuscript_draft.md
+└── vkorc1_integrated_workflow_manuscript.md
 ```
 
 Large docking pose trees under `results/` are gitignored. Run `python deposition/prepare_deposition.py` to bundle CSVs and metrics for Zenodo.
@@ -77,13 +77,31 @@ python scripts/validate_reinvent_provenance.py
 ## Data & reproducibility
 
 - Frozen dataset provenance: `data/DATA_PROVENANCE.md`
-- Scaffold split indices: `publication/data/gnn_scaffold_split.json` (after training)
+- Label mapping notes: `publication/data/LABEL_PROVENANCE.md`
+- Scaffold split indices: `publication/data/gnn_scaffold_split.json` (frozen; load with `--split-from`)
+- VKORC1 label audit: `publication/data/gnn_vkorc1_label_audit.json`
 - REINVENT run provenance: `publication/data/reinvent_provenance.json`
+- Manuscript tables/figures: `publication/output/tables/`, `publication/output/figures/`
+- Internal QC (reference ligands, not in manuscript): `publication/output/internal_qc/`
 - Zenodo bundle: `deposition/package/` (via `prepare_deposition.py`)
+- Legacy multi-receptor rigid docking summary: `docking_results.csv` (not used in manuscript; flexible RL screening in deposition)
+
+## Membrane MD (GPU workstation)
+
+Fresh Windows + WSL2 setup for GROMACS on RTX 4060 Ti:
+
+```bash
+# Windows PowerShell (Admin): md_gromacs/scripts/setup_windows_wsl.ps1
+# After reboot + NVIDIA driver: in Ubuntu WSL:
+bash md_gromacs/scripts/setup_pc_all.sh
+```
+
+Full guide: [md_gromacs/PC_SETUP.md](md_gromacs/PC_SETUP.md)  
+CHARMM-GUI steps: [md_gromacs/CHARMM_GUI_CHECKLIST.md](md_gromacs/CHARMM_GUI_CHECKLIST.md)
 
 ## Manuscript
 
-Draft: `manuscript_draft.md` / `manuscript_draft.docx`  
+Draft: `vkorc1_integrated_workflow_manuscript.md` / `vkorc1_integrated_workflow_manuscript.docx`  
 Section **3.5 (MD simulations)** is reserved for upcoming GROMACS/AMBER work.
 
 ## License

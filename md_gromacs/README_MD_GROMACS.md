@@ -1,12 +1,16 @@
-# GROMACS membrane MD workflow — VKORC1_Human × 6 ligands
+# GROMACS membrane MD workflow — VKORC1_Human × 8 ligands
 
 CHARMM36m + CGenFF | ER-like bilayer | GROMACS 2023/2024 CUDA | RTX 4060 Ti
+
+**New PC?** Start with [PC_SETUP.md](PC_SETUP.md) (WSL2 + GROMACS install scripts).
 
 ---
 
 ## A) Laptop — what was generated
 
-This folder (`md_gromacs/`) was built from `md_poses/` on the laptop. **No MD was run.**
+This folder (`md_gromacs/`) was built from `md_poses/` on the laptop. **No MD was run on the laptop.**
+
+Production membrane MD (including RL_Gen_37 100 ns) was executed on a separate GPU workstation. Trajectory and analysis files live under `md_gromacs/runs/` (gitignored; transfer to the repo or Zenodo before final deposition). After transfer, regenerate Figure 8 from `.xvg` analysis outputs via `md_gromacs/scripts/analyze_md.py`.
 
 ```
 md_gromacs/
@@ -40,18 +44,22 @@ md_gromacs/
 
 ### Systems (run order)
 
-| Order | System | CGenFF risk | SMILES source |
-|-------|--------|-------------|---------------|
-| 1 | **S_Warfarin_ref** | low | `config.yaml` |
-| 2 | p_nitro_R | medium | `config.yaml` |
-| 3 | p_nitro_S | medium | `config.yaml` |
-| 4 | dimethoxy_23_S | medium | `config.yaml` |
-| 5 | RL_Gen_37 | **high** | `config_master.yaml` → `RL_Gen_37_isoA` (CIP R) |
-| 6 | RL_Gen_29_isoA | **high** | `config_master.yaml` |
+| Order | System | CGenFF risk | SMILES source | Manuscript |
+|-------|--------|-------------|---------------|------------|
+| 1 | **S_Warfarin_ref** | low | `config.yaml` | — |
+| 2 | p_nitro_R | medium | `config.yaml` | — |
+| 3 | p_nitro_S | medium | `config.yaml` | — |
+| 4 | dimethoxy_23_S | medium | `config.yaml` | — |
+| 5 | RL_Gen_37 | **high** | `config_master.yaml` → `RL_Gen_37_isoA` | MD-1 |
+| 6 | RL_Gen_29_isoA | **high** | `config_master.yaml` | MD-2 |
+| 7 | RL_Gen_22 | **high** | `config_master.yaml` → `RL_Gen_22_isoA` | MD-3 |
+| 8 | RL_Gen_45 | **high** | `config_master.yaml` | MD-4 |
+
+Manuscript case study uses **RL-only** systems only — see [manifest_manuscript_rl.csv](manifest_manuscript_rl.csv).
 
 Coumarin references use **enolate** `[O-]` charge state at pH 7.4.
 
-### Push to GitHub (laptop)
+**High-risk ligands (expect manual ParamChem):** all four RL_Gen systems above.
 
 ```bash
 cd ~/warfarin_project
@@ -130,6 +138,8 @@ CHARMM-GUI ships its own mdp files. You may either:
 
 Path: `/home/amar/warfarin_project`
 
+**Automated setup:** [PC_SETUP.md](PC_SETUP.md) — run `bash md_gromacs/scripts/setup_pc_all.sh` on a fresh WSL Ubuntu install.
+
 ### C.1 Sync repo
 
 ```bash
@@ -140,7 +150,7 @@ bash md_gromacs/scripts/pc_checklist.sh
 
 Expect:
 
-- 6 files in `md_poses/complexes/`
+- 8 files in `md_poses/complexes/` (see `manifest.csv`)
 - `nvidia-smi` shows RTX 4060 Ti
 - `gmx -version` reports **CUDA**
 
@@ -206,16 +216,26 @@ Run **one complex at a time** to avoid VRAM contention.
 ### C.5 Analysis
 
 ```bash
+export PATH=$HOME/miniforge3/envs/gromacs_env/bin:$PATH  # or your GROMACS install
+
+# H-bond occupancy only (uses existing .xtc; ~2 min for 100 ns)
 python3 md_gromacs/scripts/analyze_md.py \
-  --system S_Warfarin_ref \
-  --run-dir md_gromacs/runs/S_Warfarin_ref
+  --system RL_Gen_37 \
+  --run-dir md_gromacs/runs/RL_Gen_37 \
+  --gmx gmx \
+  --hbond-only
+
+# Full RMSD + H-bonds
+python3 md_gromacs/scripts/analyze_md.py --system RL_Gen_37 --run-dir md_gromacs/runs/RL_Gen_37
 ```
 
-Outputs in `runs/<SYSTEM>/analysis/`:
+Per-residue H-bond outputs in `runs/<SYSTEM>/analysis/`:
 
-- `rmsd_protein_ca.xvg` — protein Cα RMSD
-- `rmsd_ligand.xvg` — ligand RMSD
-- `hbond_*.xvg` — H-bonds to Asn80, Ser81, Tyr139, Phe55, Trp59, Thr138, Val134
+- `hbond_residue_map.json` — PLIP label → GROMACS `resid` (auto from docked complex)
+- `hbond_LIG_<label>_gmx<resid>.xvg` — H-bond count vs time
+- `hbond_summary.json` / `hbond_summary.txt` — occupancy % and mean count
+
+**Note:** PLIP labels (e.g. ASN80) use manuscript numbering; GROMACS uses membrane-build `resid` (e.g. 217). The script maps these automatically. GROMACS 2026+ uses `-r`/`-t` selections instead of legacy `-don`/`-acc`.
 
 ---
 

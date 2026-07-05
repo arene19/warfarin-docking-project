@@ -2,12 +2,21 @@
 """Validate REINVENT config vs archived generation CSVs."""
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def main() -> None:
@@ -18,13 +27,29 @@ def main() -> None:
     ok = True
     canonical = ROOT / prov["canonical_generation_csv"]
     if not canonical.exists():
-        print(f"MISSING canonical CSV: {canonical}")
-        ok = False
-    else:
-        header = canonical.read_text(encoding="utf-8").splitlines()[0]
+        fallback = ROOT / "deposition/package/reinvent/coumarin_generation_1.csv"
+        if fallback.exists():
+            canonical = fallback
+            print(f"Using deposition fallback CSV: {fallback}")
+        else:
+            print(f"MISSING canonical CSV: {ROOT / prov['canonical_generation_csv']}")
+            ok = False
+    if canonical.exists():
+        lines = canonical.read_text(encoding="utf-8").splitlines()
+        header = lines[0] if lines else ""
+        row_count = max(0, len(lines) - 1)
         has_gnn = "Pred_VKORC1_pXC50" in header
-        print(f"Canonical CSV: {canonical} — Pred_VKORC1_pXC50: {has_gnn}")
-        ok = ok and has_gnn
+        digest = sha256(canonical)
+        print(f"Canonical CSV: {canonical} — rows={row_count}, Pred_VKORC1_pXC50={has_gnn}, sha256={digest[:16]}…")
+        ok = ok and has_gnn and row_count > 0
+
+        dep_copy = ROOT / "deposition/package/reinvent/coumarin_generation_1.csv"
+        if dep_copy.exists() and dep_copy.resolve() != canonical.resolve():
+            if sha256(dep_copy) != digest:
+                print("WARN: deposition/package REINVENT CSV checksum differs from canonical")
+                ok = False
+            else:
+                print("Deposition REINVENT CSV checksum matches canonical")
 
     toml = ROOT / prov["canonical_reinvent_config"]
     if toml.exists():
@@ -42,6 +67,7 @@ def main() -> None:
         print(f"Root coumarin_rl.json has GNN ExternalProcess: {has_ext} (expected False — pilot run)")
 
     print("VALIDATION:", "PASS" if ok else "FAIL — see messages above")
+    sys.exit(0 if ok else 1)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{
+  "description": "VKORC1 test compounds excluding RL Vina pseudo-label SMILES",
+  "multitask_gat": {
+    "n": 23,
+    "rmse": 1.3897759917658485,
+    "mae": 1.1464140104210896,
+    "r2": -0.5422971292948457,
+    "spearman_rho": -0.06719367588932806
+  },
+  "morgan_rf": {
+    "n": 23,
+    "rmse": 1.055665806891875,
+    "mae": 0.8913770358252924,
+    "r2": 0.11012019681092455,
+    "spearman_rho": 0.16699604743083005
+  }
+}

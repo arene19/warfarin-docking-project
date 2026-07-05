@@ -16,7 +16,7 @@ from scipy.stats import spearmanr
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-from gnn_model import generate_scaffold, load_multitask_data, scaffold_split, TARGET_COLS
+from gnn_model import generate_scaffold, load_multitask_data, resolve_scaffold_split, TARGET_COLS
 TASK_SHORT = ["VKORC1", "Factor XIIa", "Factor Xa", "Thrombin", "CYP2C9", "HSA"]
 
 MORGAN_RADIUS = 2
@@ -128,8 +128,6 @@ def collect_test_predictions(
     models: Dict[str, RandomForestRegressor],
 ) -> Dict[str, Dict[str, list]]:
     """Return per-task test labels and predictions for plotting."""
-    from dynamic_gnn_pipeline import generate_scaffold
-
     train_scaffolds = {
         generate_scaffold(s) for s in train_df["canonical_smiles"] if generate_scaffold(s)
     }
@@ -156,8 +154,8 @@ def collect_test_predictions(
     return out
 
 
-def scaffold_split_summary(dataset) -> pd.DataFrame:
-    train, val, test, _ = scaffold_split(dataset)
+def scaffold_split_summary(dataset, split_from: Optional[str] = None) -> pd.DataFrame:
+    train, val, test, _ = resolve_scaffold_split(dataset, split_from=split_from)
     splits = {"Train": train, "Validation": val, "Test": test}
     rows = []
     for name, data_list in splits.items():
@@ -179,7 +177,9 @@ def load_or_train(
     """Load saved Morgan RF models or train fresh; return frames, metrics, models, predictions."""
     model_dir = Path(model_dir)
     dataset = load_multitask_data(csv_path)
-    train_data, _, test_data, _ = scaffold_split(dataset)
+    split_path = Path("publication/data/gnn_scaffold_split.json")
+    split_from = str(split_path) if split_path.exists() else None
+    train_data, _, test_data, _ = resolve_scaffold_split(dataset, split_from=split_from)
     train_df = data_list_to_frame(train_data)
     test_df = data_list_to_frame(test_data)
 
@@ -198,7 +198,7 @@ def load_or_train(
     with open(pred_path, "w", encoding="utf-8") as f:
         json.dump(preds, f, indent=2)
 
-    split_df = scaffold_split_summary(dataset)
+    split_df = scaffold_split_summary(dataset, split_from=split_from)
     return train_df, test_df, metrics, models, {"predictions": preds, "split": split_df}
 
 
@@ -234,7 +234,9 @@ def save_artifacts(
 def main() -> None:
     csv_path = os.path.join("data", "coagulation_admet_multi_task.csv")
     dataset = load_multitask_data(csv_path)
-    train_data, _, test_data, _ = scaffold_split(dataset)
+    split_path = Path("publication/data/gnn_scaffold_split.json")
+    split_from = str(split_path) if split_path.exists() else None
+    train_data, _, test_data, _ = resolve_scaffold_split(dataset, split_from=split_from)
     train_df = data_list_to_frame(train_data)
     test_df = data_list_to_frame(test_data)
 

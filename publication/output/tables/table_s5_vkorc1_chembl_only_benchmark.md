@@ -1,0 +1,6 @@
+## Supplementary Table S5. VKORC1 test metrics excluding RL-library SMILES overlaps
+
+| Model          |   n_test |   RMSE |   MAE |     R2 |   Spearman_rho |
+|:---------------|---------:|-------:|------:|-------:|---------------:|
+| Multi-task GAT |       23 |  1.39  | 1.146 | -0.542 |         -0.067 |
+| Morgan FP + RF |       23 |  1.056 | 0.891 |  0.11  |          0.167 |

@@ -1,0 +1,134 @@
+[
+  {
+    "system_id": "RL_Gen_29_isoA",
+    "trajectory": "md_100ns",
+    "length_ns": 100.0,
+    "temperature_K": 310.056,
+    "pressure_bar": 1.28056,
+    "protein_rmsd": {
+      "full_mean_A": 3.168,
+      "full_max_A": 4.515,
+      "second_half_mean_A": 3.686,
+      "second_half_max_A": 4.515,
+      "last25_mean_A": 3.779,
+      "last25_max_A": 4.515,
+      "quarter_means_A": [
+        2.21,
+        3.087,
+        3.592,
+        3.779
+      ],
+      "drift_A_per_ns": 0.0122,
+      "t_end_ps": 100000.0
+    },
+    "ligand_rmsd": {
+      "full_mean_A": 4.631,
+      "full_max_A": 5.337,
+      "second_half_mean_A": 4.739,
+      "second_half_max_A": 5.337,
+      "last25_mean_A": 4.751,
+      "last25_max_A": 5.156,
+      "quarter_means_A": [
+        4.478,
+        4.566,
+        4.727,
+        4.751
+      ],
+      "drift_A_per_ns": 0.002,
+      "t_end_ps": 100000.0
+    },
+    "performance": {
+      "ns_per_day": 84.095,
+      "hour_per_ns": 0.285,
+      "wall_hours": 8.669444444444444
+    }
+  },
+  {
+    "system_id": "RL_Gen_37",
+    "trajectory": "md_100ns",
+    "length_ns": 100.0,
+    "temperature_K": 310.06,
+    "pressure_bar": 1.02474,
+    "protein_rmsd": {
+      "full_mean_A": 2.526,
+      "full_max_A": 3.698,
+      "second_half_mean_A": 2.526,
+      "second_half_max_A": 3.698,
+      "last25_mean_A": 2.317,
+      "last25_max_A": 2.753,
+      "quarter_means_A": [
+        2.385,
+        2.666,
+        2.736,
+        2.317
+      ],
+      "drift_A_per_ns": -0.0186,
+      "t_end_ps": 100000.0
+    },
+    "ligand_rmsd": {
+      "full_mean_A": 1.872,
+      "full_max_A": 2.833,
+      "second_half_mean_A": 1.918,
+      "second_half_max_A": 2.833,
+      "last25_mean_A": 1.902,
+      "last25_max_A": 2.833,
+      "quarter_means_A": [
+        1.855,
+        1.798,
+        1.934,
+        1.902
+      ],
+      "drift_A_per_ns": -0.002,
+      "t_end_ps": 100000.0
+    },
+    "performance": {
+      "ns_per_day": 84.591,
+      "hour_per_ns": 0.284,
+      "wall_hours": 10.8325
+    }
+  },
+  {
+    "system_id": "S_Warfarin_ref",
+    "trajectory": "md_20ns",
+    "length_ns": 20.0,
+    "temperature_K": 310.06,
+    "pressure_bar": -0.114553,
+    "protein_rmsd": {
+      "full_mean_A": 1.543,
+      "full_max_A": 2.161,
+      "second_half_mean_A": 1.758,
+      "second_half_max_A": 2.161,
+      "last25_mean_A": 1.769,
+      "last25_max_A": 2.161,
+      "quarter_means_A": [
+        1.125,
+        1.527,
+        1.746,
+        1.769
+      ],
+      "drift_A_per_ns": -0.0013,
+      "t_end_ps": 20000.0
+    },
+    "ligand_rmsd": {
+      "full_mean_A": 3.268,
+      "full_max_A": 4.828,
+      "second_half_mean_A": 3.181,
+      "second_half_max_A": 3.766,
+      "last25_mean_A": 3.167,
+      "last25_max_A": 3.489,
+      "quarter_means_A": [
+        3.501,
+        3.209,
+        3.196,
+        3.167
+      ],
+      "drift_A_per_ns": -0.0028,
+      "t_end_ps": 20000.0
+    },
+    "performance": {
+      "ns_per_day": 81.375,
+      "hour_per_ns": 0.295,
+      "wall_hours": 5.89861111111111
+    }
+  }
+]

@@ -1,0 +1,19 @@
+## Internal QC — combined RL + reference docking (not in manuscript)
+
+| Ligand         | Class     |   dG_kcal_mol |   pXC50_Vina_derived | success   |
+|:---------------|:----------|--------------:|---------------------:|:----------|
+| RL_Gen_37      | RL_Gen    |       -12.244 |                9.003 | True      |
+| p_nitro_R      | Reference |       -12.123 |                8.914 | True      |
+| p_nitro_S      | Reference |       -11.768 |                8.653 | True      |
+| RL_Gen_22      | RL_Gen    |       -11.545 |                8.489 | True      |
+| m_nitro_S      | Reference |       -11.505 |                8.46  | True      |
+| dimethoxy_23_S | Reference |       -11.49  |                8.449 | True      |
+| RL_Gen_29_isoA | RL_Gen    |       -11.419 |                8.396 | True      |
+| RL_Gen_45      | RL_Gen    |       -11.395 |                8.379 | True      |
+| m_bromo_R      | Reference |       -11.373 |                8.362 | True      |
+| m_nitro_R      | Reference |       -11.314 |                8.319 | True      |
+| R_Warfarin_ref | Reference |       -11.294 |                8.304 | True      |
+| BENZ_R         | Reference |       -11.231 |                8.258 | True      |
+| dimethoxy_23_R | Reference |       -11.117 |                8.174 | True      |
+| S_Warfarin_ref | Reference |       -10.924 |                8.032 | True      |
+| BENZ_S         | Reference |       -10.532 |                7.744 | True      |

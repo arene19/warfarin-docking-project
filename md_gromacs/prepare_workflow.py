@@ -22,6 +22,8 @@ SYSTEMS = [
     "dimethoxy_23_S",
     "RL_Gen_37",
     "RL_Gen_29_isoA",
+    "RL_Gen_22",
+    "RL_Gen_45",
 ]
 
 # ligand_id -> (yaml file relative to ROOT, smiles key)
@@ -32,6 +34,8 @@ SMILES_SOURCE = {
     "dimethoxy_23_S": ("config.yaml", "dimethoxy_23_S"),
     "RL_Gen_37": ("config_master.yaml", "RL_Gen_37_isoA"),
     "RL_Gen_29_isoA": ("config_master.yaml", "RL_Gen_29_isoA"),
+    "RL_Gen_22": ("config_master.yaml", "RL_Gen_22_isoA"),
+    "RL_Gen_45": ("config_master.yaml", "RL_Gen_45"),
 }
 
 CGENFF_RISK = {
@@ -41,6 +45,8 @@ CGENFF_RISK = {
     "dimethoxy_23_S": "medium",
     "RL_Gen_37": "high",
     "RL_Gen_29_isoA": "high",
+    "RL_Gen_22": "high",
+    "RL_Gen_45": "high",
 }
 
 CGENFF_NOTES = {
@@ -81,6 +87,21 @@ CGENFF_NOTES = {
         - **HIGH RISK**: triazole, gem-difluoro, extended aromatic scaffold.
         - Use isoA SMILES only (explicit @ stereochemistry).
         - ParamChem manual submission recommended if CHARMM-GUI ligand reader fails.
+        """
+    ),
+    "RL_Gen_22": textwrap.dedent(
+        """\
+        - **HIGH RISK**: fluorinated benzamide, carbamate, multi-ring scaffold.
+        - Use RL_Gen_22_isoA SMILES (explicit @) — matches flat-dock MODEL 1 embed.
+        - Lipinski MW violation (487 Da) in ADMET profile; verify topology before long production.
+        - ParamChem fallback likely if CHARMM-GUI auto CGenFF penalizes torsions.
+        """
+    ),
+    "RL_Gen_45": textwrap.dedent(
+        """\
+        - **HIGH RISK**: spirocyclic / bridged peroxide-like scaffold; unusual for CGenFF.
+        - Flat-dock MODEL 1 pose; ParamChem manual submission strongly recommended.
+        - Inspect penalty scores carefully; consider 20 ns pilot only until ligand RMSD stable.
         """
     ),
 }

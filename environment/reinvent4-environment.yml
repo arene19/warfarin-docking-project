@@ -1,0 +1,15 @@
+# REINVENT4 generative run environment (pinned from REINVENT4/coumarin_rl.log, 2026-06-19).
+# Create: conda env create -f environment/reinvent4-environment.yml
+# Activate: conda activate reinvent4
+name: reinvent4
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.20
+  - pip
+  - pip:
+      - reinvent==4.7.15  # install from git f9486d7 if pip wheel unavailable: pip install -e REINVENT4/
+      - torch==2.9.1
+      - rdkit==2026.3.3

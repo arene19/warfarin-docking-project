@@ -1,11 +1,11 @@
 ## Table 1. GNN test metrics by endpoint
 
-| Task | n_test | GAT_RMSE | GAT_R2 | RF_R2 | VKORC1_only_GAT_R2 |
-| --- | --- | --- | --- | --- | --- |
-| VKORC1 | 41 | 1.16 | -0.14 | 0.28 | -0.03 |
-| Factor XIIa | 222 | 0.76 | 0.65 | 0.82 | nan |
-| Factor Xa | 623 | 1.21 | 0.45 | 0.67 | nan |
-| Thrombin | 599 | 1.01 | 0.56 | 0.69 | nan |
-| CYP2C9 | 720 | 0.87 | 0.06 | 0.17 | nan |
-| HSA | 5 | 6.19 | -0.2 | -0.01 | nan |
-| Pooled (all tasks) | 2210 | 1.05 | 0.56 | nan | nan |
+| Task               |   n_test |   GAT_RMSE |   GAT_R2 |   GAT_Spearman_rho |   RF_R2 |   RF_Spearman_rho |   VKORC1_only_GAT_R2 |
+|:-------------------|---------:|-----------:|---------:|-------------------:|--------:|------------------:|---------------------:|
+| VKORC1             |       41 |       1.28 |    -0.38 |               0.21 |    0.28 |              0.55 |                 0.02 |
+| Factor XIIa        |      222 |       0.78 |     0.64 |             nan    |    0.82 |            nan    |               nan    |
+| Factor Xa          |      623 |       1.09 |     0.56 |             nan    |    0.67 |            nan    |               nan    |
+| Thrombin           |      599 |       0.96 |     0.6  |             nan    |    0.69 |            nan    |               nan    |
+| CYP2C9             |      720 |       0.88 |     0.03 |             nan    |    0.17 |            nan    |               nan    |
+| HSA                |        5 |       5.67 |    -0    |             nan    |   -0.01 |            nan    |               nan    |
+| Pooled (all tasks) |     2210 |       1    |     0.6  |             nan    |  nan    |            nan    |               nan    |

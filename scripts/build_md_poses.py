@@ -16,6 +16,8 @@ LIGANDS = [
     "dimethoxy_23_S",
     "RL_Gen_37",
     "RL_Gen_29_isoA",
+    "RL_Gen_22",
+    "RL_Gen_45",
 ]
 
 TARGET = "VKORC1_Human"
@@ -181,11 +183,11 @@ def main() -> None:
                 "ligand_atoms": n_atoms,
                 "ligand_resname": LIGAND_RESNAME,
                 "ligand_chain": LIGAND_CHAIN,
-                "enantiomer_note": (
-                    "RL_Gen_37: flat dock MODEL 1; 3D embed = CIP R"
-                    if lig == "RL_Gen_37"
-                    else "corrected R/S per config.yaml"
-                ),
+                "enantiomer_note": {
+                    "RL_Gen_37": "RL_Gen_37: flat dock MODEL 1; 3D embed = CIP R (isoA)",
+                    "RL_Gen_22": "RL_Gen_22: flat dock MODEL 1; CGenFF uses isoA SMILES",
+                    "RL_Gen_45": "RL_Gen_45: flat dock MODEL 1; spirocyclic scaffold",
+                }.get(lig, "corrected R/S per config.yaml"),
             }
         )
         print(f"[OK] {lig} -> {complex_path.name} ({n_atoms} ligand atoms, VKOR={vkor:.3f})")
@@ -210,7 +212,7 @@ Prepared for molecular dynamics starting structures.
 - `ligands/*_model1_ligand.pdb` — ligand only (chain B, resname `LIG`)
 - `md_pose_manifest.csv` — affinities and file paths
 
-## Ligands (6)
+## Ligands (8)
 
 | Ligand | Role |
 |--------|------|
@@ -218,8 +220,10 @@ Prepared for molecular dynamics starting structures.
 | p_nitro_R | Top para-nitro (R) reference |
 | p_nitro_S | Para-nitro (S) stereochemistry pair |
 | dimethoxy_23_S | Dimethoxy reference (S) |
-| RL_Gen_37 | Top GNN/REINVENT hit |
-| RL_Gen_29_isoA | GNN hit; rich H-bond network |
+| RL_Gen_37 | Top GNN/REINVENT hit (manuscript MD-1) |
+| RL_Gen_29_isoA | GNN hit; rich H-bond network (manuscript MD-2) |
+| RL_Gen_22 | Third-ranked RL hit (manuscript MD-3) |
+| RL_Gen_45 | Fourth-ranked RL hit; spirocyclic (manuscript MD-4) |
 
 ## Docking provenance
 

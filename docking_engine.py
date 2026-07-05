@@ -2,6 +2,7 @@ import os
 import time
 import shutil
 import glob
+import json
 import subprocess
 import multiprocessing
 from pathlib import Path
@@ -27,6 +28,16 @@ class DockingResult:
     error: str = ""
     runtime_seconds: float = 0.0
 
+
+def _serialize_affinities(affinities: list) -> str:
+    """JSON list of plain floats for CSV export (avoids np.float64 repr strings)."""
+    return json.dumps([float(a) for a in affinities])
+
+
+def _result_row(result: DockingResult) -> dict:
+    row = asdict(result)
+    row["all_affinities"] = _serialize_affinities(result.all_affinities)
+    return row
 
 def prepare_flexible_receptor(receptor_pdb: str, receptor_pdbqt: str, target_name: str, flex_res_list: list = None) -> tuple:
     """Splits receptor structures into rigid/flexible layers dynamically."""
@@ -279,7 +290,7 @@ def virtual_screening(ligand_pdbqt_dir: str,
                 min_rmsd=min_rmsd,
                 n_cpu=allocated_cpus
             )
-        results.append(asdict(result))
+        results.append(_result_row(result))
 
     df_new = pd.DataFrame(results).sort_values("best_affinity")
     csv_path = os.path.join(output_dir, f"{target_name}_screening_results.csv")

@@ -25,11 +25,16 @@ check test -d "${REPO}/md_poses/complexes"
 check test -f "${REPO}/md_poses/md_pose_manifest.csv"
 check test -d "${REPO}/md_gromacs"
 
+EXPECTED=8
+if [[ -f "${REPO}/md_gromacs/manifest.csv" ]]; then
+  EXPECTED=$(tail -n +2 "${REPO}/md_gromacs/manifest.csv" | wc -l)
+fi
+
 N=$(find "${REPO}/md_poses/complexes" -name '*.pdb' 2>/dev/null | wc -l)
-if [[ "${N}" -ge 6 ]]; then
-  echo "[OK] md_poses complexes: ${N} PDB files"
+if [[ "${N}" -ge "${EXPECTED}" ]]; then
+  echo "[OK] md_poses complexes: ${N} PDB files (manifest: ${EXPECTED} systems)"
 else
-  echo "[FAIL] Expected 6 complex PDBs, found ${N}"
+  echo "[FAIL] Expected >= ${EXPECTED} complex PDBs, found ${N}"
   fail=1
 fi
 

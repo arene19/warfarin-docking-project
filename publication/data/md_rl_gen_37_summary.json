@@ -1,0 +1,14 @@
+{
+  "system_id": "RL_Gen_37_isoA",
+  "production_ns": 100.0,
+  "temperature_K": 310.06,
+  "pressure_bar": 1.02,
+  "protein_rmsd_mean_A": 2.526,
+  "protein_rmsd_last25pct_A": 2.317,
+  "ligand_rmsd_2nd_half_mean_A": 1.918,
+  "ligand_rmsd_max_A": 2.833,
+  "status": "Complete",
+  "provenance": "parsed_from_md_results_summary",
+  "source_notes": "Derived from publication/data/md_results_summary.json (RL_Gen_37 run folder).",
+  "parsed_at": "2026-07-05T17:04:15.227560+00:00"
+}

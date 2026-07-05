@@ -5,3 +5,5 @@ p_nitro_S,3,systems/p_nitro_S/charmm_gui/complex.pdb,systems/p_nitro_S/charmm_gu
 dimethoxy_23_S,4,systems/dimethoxy_23_S/charmm_gui/complex.pdb,systems/dimethoxy_23_S/charmm_gui/protein.pdb,systems/dimethoxy_23_S/charmm_gui/ligand.pdb,systems/dimethoxy_23_S/ligand_params/ligand.sdf,medium,20,100
 RL_Gen_37,5,systems/RL_Gen_37/charmm_gui/complex.pdb,systems/RL_Gen_37/charmm_gui/protein.pdb,systems/RL_Gen_37/charmm_gui/ligand.pdb,systems/RL_Gen_37/ligand_params/ligand.sdf,high,20,100
 RL_Gen_29_isoA,6,systems/RL_Gen_29_isoA/charmm_gui/complex.pdb,systems/RL_Gen_29_isoA/charmm_gui/protein.pdb,systems/RL_Gen_29_isoA/charmm_gui/ligand.pdb,systems/RL_Gen_29_isoA/ligand_params/ligand.sdf,high,20,100
+RL_Gen_22,7,systems/RL_Gen_22/charmm_gui/complex.pdb,systems/RL_Gen_22/charmm_gui/protein.pdb,systems/RL_Gen_22/charmm_gui/ligand.pdb,systems/RL_Gen_22/ligand_params/ligand.sdf,high,20,100
+RL_Gen_45,8,systems/RL_Gen_45/charmm_gui/complex.pdb,systems/RL_Gen_45/charmm_gui/protein.pdb,systems/RL_Gen_45/charmm_gui/ligand.pdb,systems/RL_Gen_45/ligand_params/ligand.sdf,high,20,100

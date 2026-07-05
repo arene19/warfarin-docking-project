@@ -1,0 +1,8 @@
+MULTI-SEED REPRODUCIBILITY — reference ligands vs VKORC1_Human
+
+R_Warfarin_ref: mean=-11.293, std=0.006, min=-11.304, max=-11.281 kcal/mol  (n=8)
+S_Warfarin_ref: mean=-10.941, std=0.013, min=-10.960, max=-10.920 kcal/mol  (n=8)
+p_nitro_R: mean=-12.127, std=0.024, min=-12.159, max=-12.092 kcal/mol  (n=8)
+p_nitro_S: mean=-11.762, std=0.013, min=-11.777, max=-11.746 kcal/mol  (n=8)
+
+Seeds tested: [1, 42, 123, 456, 789, 999, 2024, 31415]

@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-07-05T17:04:15.226940+00:00",
+  "source_package_summary": "publication/data/md/MD_RESULTS_SUMMARY.json",
+  "systems": [
+    {
+      "run_id": "RL_Gen_37",
+      "manuscript_label": "RL_Gen_37_isoA",
+      "docking_flat_ligand": "RL_Gen_37",
+      "docking_isoA_ligand": "RL_Gen_37_isoA",
+      "status": "Complete",
+      "production_ns": 100.0,
+      "temperature_K": 310.06,
+      "pressure_bar": 1.02,
+      "protein_rmsd_mean_A": 2.526,
+      "protein_rmsd_second_half_mean_A": 2.526,
+      "protein_rmsd_last25pct_A": 2.317,
+      "protein_rmsd_max_A": 3.698,
+      "ligand_rmsd_mean_A": 1.872,
+      "ligand_rmsd_2nd_half_mean_A": 1.918,
+      "ligand_rmsd_last25pct_A": 1.902,
+      "ligand_rmsd_max_A": 2.833,
+      "trajectory": "md_100ns",
+      "hbond_residues": [
+        {
+          "plip_label": "ASN80",
+          "gmx_resid": 217,
+          "occupancy_pct": 99.4
+        },
+        {
+          "plip_label": "SER81",
+          "gmx_resid": 218,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "TYR139",
+          "gmx_resid": 256,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "PHE55",
+          "gmx_resid": 192,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "TRP59",
+          "gmx_resid": 196,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "THR138",
+          "gmx_resid": 275,
+          "occupancy_pct": 0.2
+        },
+        {
+          "plip_label": "VAL134",
+          "gmx_resid": 191,
+          "occupancy_pct": 0.0
+        }
+      ],
+      "hbond_ASN80_occupancy_pct": 99.4,
+      "hbond_SER81_occupancy_pct": 0.0
+    },
+    {
+      "run_id": "RL_Gen_29_isoA",
+      "manuscript_label": "RL_Gen_29_isoA",
+      "docking_flat_ligand": null,
+      "docking_isoA_ligand": "RL_Gen_29_isoA",
+      "status": "Complete",
+      "production_ns": 100.0,
+      "temperature_K": 310.06,
+      "pressure_bar": 1.28,
+      "protein_rmsd_mean_A": 3.168,
+      "protein_rmsd_second_half_mean_A": 3.686,
+      "protein_rmsd_last25pct_A": 3.779,
+      "protein_rmsd_max_A": 4.515,
+      "ligand_rmsd_mean_A": 4.631,
+      "ligand_rmsd_2nd_half_mean_A": 4.739,
+      "ligand_rmsd_last25pct_A": 4.751,
+      "ligand_rmsd_max_A": 5.337,
+      "trajectory": "md_100ns",
+      "hbond_residues": [
+        {
+          "plip_label": "ASN80",
+          "gmx_resid": 217,
+          "occupancy_pct": 10.29
+        },
+        {
+          "plip_label": "SER81",
+          "gmx_resid": 160,
+          "occupancy_pct": 0.4
+        },
+        {
+          "plip_label": "TYR139",
+          "gmx_resid": 276,
+          "occupancy_pct": 29.07
+        },
+        {
+          "plip_label": "PHE55",
+          "gmx_resid": 192,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "TRP59",
+          "gmx_resid": 196,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "THR138",
+          "gmx_resid": 275,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "VAL134",
+          "gmx_resid": 271,
+          "occupancy_pct": 0.0
+        }
+      ],
+      "hbond_ASN80_occupancy_pct": 10.29,
+      "hbond_SER81_occupancy_pct": 0.4
+    },
+    {
+      "run_id": "S_Warfarin_ref",
+      "manuscript_label": "S-warfarin (ref)",
+      "docking_flat_ligand": null,
+      "docking_isoA_ligand": null,
+      "status": "Complete",
+      "production_ns": 20.0,
+      "temperature_K": 310.06,
+      "pressure_bar": -0.11,
+      "protein_rmsd_mean_A": 1.543,
+      "protein_rmsd_second_half_mean_A": 1.758,
+      "protein_rmsd_last25pct_A": 1.769,
+      "protein_rmsd_max_A": 2.161,
+      "ligand_rmsd_mean_A": 3.268,
+      "ligand_rmsd_2nd_half_mean_A": 3.181,
+      "ligand_rmsd_last25pct_A": 3.167,
+      "ligand_rmsd_max_A": 4.828,
+      "trajectory": "md_20ns",
+      "hbond_residues": [
+        {
+          "plip_label": "ASN80",
+          "gmx_resid": 217,
+          "occupancy_pct": 1.0
+        },
+        {
+          "plip_label": "SER81",
+          "gmx_resid": 218,
+          "occupancy_pct": 62.19
+        },
+        {
+          "plip_label": "TYR139",
+          "gmx_resid": 256,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "PHE55",
+          "gmx_resid": 192,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "TRP59",
+          "gmx_resid": 259,
+          "occupancy_pct": 0.0
+        },
+        {
+          "plip_label": "THR138",
+          "gmx_resid": 275,
+          "occupancy_pct": 2.49
+        },
+        {
+          "plip_label": "VAL134",
+          "gmx_resid": 271,
+          "occupancy_pct": 0.0
+        }
+      ],
+      "hbond_ASN80_occupancy_pct": 1.0,
+      "hbond_SER81_occupancy_pct": 62.19
+    }
+  ],
+  "naming_notes": "Run folder RL_Gen_37 corresponds to manuscript label RL_Gen_37_isoA."
+}

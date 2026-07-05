@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-07-04T16:57:56.130159+00:00",
+  "source": "data/coagulation_admet_multi_task.csv",
+  "frozen_path": "publication/data/coagulation_admet_multi_task_publication.csv",
+  "sha256": "2663df26c214dbaba8d466d506b9a94946f74950dd585773e6714937373a3cd4",
+  "n_compounds_total": 18976,
+  "n_compounds_in_frozen_split": 18966,
+  "n_compounds_outside_split": 10,
+  "n_vkorc1_labels_total": 119,
+  "n_vkorc1_labels_in_split": 109,
+  "n_vkorc1_labels_outside_split": 10,
+  "split_sizes": {
+    "train": 15172,
+    "val": 1897,
+    "test": 1897
+  },
+  "note": "GNN benchmarks (Table 1, S5) use gnn_scaffold_split.json on the in-split partition only. Compounds outside the split are retained in the frozen master for active-learning transparency but are not assigned to train/val/test benchmarks."
+}

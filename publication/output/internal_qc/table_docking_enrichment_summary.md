@@ -1,0 +1,11 @@
+## Internal QC — retrospective VKORC1 docking enrichment
+
+| Metric              | Value   |
+|:--------------------|:--------|
+| ROC-AUC             | 0.964   |
+| EF@1%               | 6.00    |
+| EF@5%               | 6.00    |
+| EF@10%              | 6.00    |
+| Actives             | 10      |
+| Decoys              | 50      |
+| Successfully docked | 60 / 60 |

@@ -23,7 +23,33 @@ python active_learning_merger.py          # merge RL_Gen docking labels
 Murcko scaffold assignment and train/val/test SMILES are saved after training:
 
 ```bash
-python dynamic_gnn_pipeline.py   # writes publication/data/gnn_scaffold_split.json
+python active_learning_merger.py          # merge RL_Gen labels (skips val/test SMILES)
+python dynamic_gnn_pipeline.py --split-from publication/data/gnn_scaffold_split.json
+python gnn_baseline_evaluation.py --split-from publication/data/gnn_scaffold_split.json
+```
+
+## Regenerating assets from deposition only
+
+If `results/` or checkpoints are missing on a fresh clone, restore from the Zenodo bundle:
+
+```bash
+python scripts/bootstrap_results_from_deposition.py
+# Flat Zenodo unzip (metrics/ and docking/ at repo root):
+python scripts/bootstrap_results_from_deposition.py --package-dir .
+python gnn_baseline_evaluation.py --split-from publication/data/gnn_scaffold_split.json
+python publication/generate_manuscript_assets.py
+```
+
+Bootstrap restores master CSV, checkpoints, metrics JSON, scaffold split, docking CSVs, ligand SDFs, and core Python modules (`gnn_model.py`, `morgan_fp_baseline.py`, etc.).
+
+## Publication rebuild guard
+
+`publication/build_all.sh` exits if the screening CSV is newer than the master CSV or GNN checkpoint. After merging new RL labels, retrain before rebuilding:
+
+```bash
+python active_learning_merger.py
+python dynamic_gnn_pipeline.py --split-from publication/data/gnn_scaffold_split.json
+bash publication/build_all.sh
 ```
 
 ## Checkpoints

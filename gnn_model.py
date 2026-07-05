@@ -146,14 +146,14 @@ def scaffold_split(
         scaffold = generate_scaffold(data.smiles)
         scaffolds.setdefault(scaffold, []).append(data)
 
-    sorted_scaffolds = sorted(scaffolds.values(), key=len, reverse=True)
+    scaffold_groups = sorted(scaffolds.values(), key=len, reverse=True)
     train_cutoff = int(frac_train * len(dataset))
     val_cutoff = int((frac_train + frac_val) * len(dataset))
 
     train_set: List[Data] = []
     val_set: List[Data] = []
     test_set: List[Data] = []
-    for group in sorted_scaffolds:
+    for group in scaffold_groups:
         if len(train_set) < train_cutoff:
             train_set.extend(group)
         elif len(train_set) + len(val_set) < val_cutoff:
@@ -380,3 +380,64 @@ def save_split_metadata(path: str | Path, split_meta: Dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(split_meta, f, indent=2)
+
+
+def load_split_metadata(path: str | Path) -> Dict[str, Any]:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def apply_scaffold_split_from_metadata(
+    dataset: List[Data],
+    split_meta: Dict[str, Any],
+) -> Tuple[List[Data], List[Data], List[Data], Dict[str, Any]]:
+    """Partition dataset using frozen train/val/test SMILES lists."""
+    by_smiles: Dict[str, Data] = {}
+    for data in dataset:
+        by_smiles.setdefault(data.smiles, data)
+
+    def _collect(smiles_list: List[str]) -> List[Data]:
+        out: List[Data] = []
+        missing = 0
+        for smi in smiles_list:
+            if smi in by_smiles:
+                out.append(by_smiles[smi])
+            else:
+                missing += 1
+        if missing:
+            raise ValueError(
+                f"{missing} SMILES from frozen split artifact not in current dataset. "
+                "Regenerate split or restore master CSV."
+            )
+        return out
+
+    train_set = _collect(split_meta["train_smiles"])
+    val_set = _collect(split_meta["val_smiles"])
+    test_set = _collect(split_meta["test_smiles"])
+    if not train_set or not val_set or not test_set:
+        raise ValueError("Frozen split produced an empty partition; regenerate split metadata.")
+
+    meta = {
+        **split_meta,
+        "train_n": len(train_set),
+        "val_n": len(val_set),
+        "test_n": len(test_set),
+        "loaded_from": str(split_meta.get("loaded_from", split_meta.get("split_path", ""))),
+    }
+    return train_set, val_set, test_set, meta
+
+
+def resolve_scaffold_split(
+    dataset: List[Data],
+    seed: int = DEFAULT_SEED,
+    split_from: Optional[str] = None,
+    frac_train: float = 0.8,
+    frac_val: float = 0.1,
+) -> Tuple[List[Data], List[Data], List[Data], Dict[str, Any]]:
+    """Use frozen split JSON when provided; otherwise compute Murcko scaffold split."""
+    if split_from and Path(split_from).exists():
+        print(f"Loading frozen scaffold split from {split_from}")
+        meta = load_split_metadata(split_from)
+        meta["loaded_from"] = str(Path(split_from).resolve())
+        return apply_scaffold_split_from_metadata(dataset, meta)
+    return scaffold_split(dataset, frac_train=frac_train, frac_val=frac_val, seed=seed)

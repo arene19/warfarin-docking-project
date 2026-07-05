@@ -84,16 +84,22 @@ vkorc1_single_task_gnn.pth
 !publication/output/**
 !publication/data/**
 !configs/**
-!manuscript_draft.md
-!manuscript_draft.docx
+!vkorc1_integrated_workflow_manuscript.md
+!vkorc1_integrated_workflow_manuscript.docx
 !deposition/manifest.json
-!deposition/package/**
+!deposition/ZENODO_UPLOAD.md
+!deposition/zenodo-metadata.json
+!deposition/prepare_deposition.py
+# Full deposition/package/ is on Zenodo (DOI 10.5281/zenodo.21208445), not in git
+deposition/package/
 !scripts/**
 !gnn_model.py
 !config_utils.py
 !data/coagulation_admet_multi_task.csv
 
-# Local-only / scratch
+# Zenodo upload archive (hosted on Zenodo; exceeds convenient git size)
+deposition/*.zip
+
 *.bak_*
 coumarin_rl.log
 .streamlit/

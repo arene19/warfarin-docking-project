@@ -1,0 +1,15 @@
+RETROSPECTIVE ENRICHMENT — VKORC1_Human
+Protocol: same as main pipeline (flexible residues, exhaustiveness=20, num_conformers=20)
+Actives: 10 literature VKORC1 / vitamin-K antagonists
+Decoys: 50 property-matched non-antagonist scaffolds (5 per active)
+Successfully docked: 60 / 60
+
+ROC-AUC: 0.964
+Enrichment factor @ 1%:  6.00
+Enrichment factor @ 5%:  6.00
+Enrichment factor @ 10%: 6.00
+
+Interpretation guide:
+  ROC-AUC > 0.7 = acceptable discrimination
+  ROC-AUC > 0.8 = good
+  EF@1% > 5 = strong early enrichment of actives in top-ranked poses

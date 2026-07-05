@@ -30,7 +30,10 @@ urllib3==2.6.3
 vina==1.2.7
 wheel==0.47.0
 
-# Install separately (CUDA-specific builds):
-#   pip install torch torch-geometric
-#   pip install chembl_webresource_client   # only for rebuilding ChEMBL CSV
+# PyTorch / PyG (pin versions used for publication training; adjust CUDA wheel index as needed)
+# REINVENT4 uses a separate conda env — see ENVIRONMENT.md (torch 2.9.1 there vs 2.12.0 here).
+torch==2.12.0
+torch-geometric==2.8.0
+
+# Optional rebuild tools:
 #   pip install python-docx                   # Word export (publication/md_to_docx.py)

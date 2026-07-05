@@ -1,6 +1,9 @@
 import os
 import subprocess
 
+# DEPRECATED — legacy OpenBabel validation using 6WV3_empty.pdbqt and a fixed grid.
+# Do not cite in the manuscript. Use receptor_validation.py and main_pipeline.py instead.
+
 def run_command(command, step_name):
     print(f"\n--- Starting {step_name} ---")
     try:

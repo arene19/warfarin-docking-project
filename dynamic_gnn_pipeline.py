@@ -19,7 +19,7 @@ from gnn_model import (
     load_multitask_data,
     save_checkpoint,
     save_split_metadata,
-    scaffold_split,
+    resolve_scaffold_split,
     set_seed,
     train_loop,
     validation_loss,
@@ -35,6 +35,16 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--history", default=os.path.join("publication", "data", "gnn_training_history.json"))
     p.add_argument("--split-meta", default=os.path.join("publication", "data", "gnn_scaffold_split.json"))
+    p.add_argument(
+        "--split-from",
+        default=os.path.join("publication", "data", "gnn_scaffold_split.json"),
+        help="Load train/val/test SMILES from this JSON (default if file exists).",
+    )
+    p.add_argument(
+        "--recompute-split",
+        action="store_true",
+        help="Ignore frozen split JSON and recompute Murcko partition.",
+    )
     return p.parse_args()
 
 
@@ -49,10 +59,17 @@ def main() -> None:
         raise FileNotFoundError(f"Could not find {args.data}")
 
     dataset = load_multitask_data(args.data)
-    train_data, val_data, test_data, split_meta = scaffold_split(dataset, seed=args.seed)
-    split_meta["data_path"] = os.path.abspath(args.data)
-    split_meta["created_at"] = datetime.now(timezone.utc).isoformat()
-    save_split_metadata(args.split_meta, split_meta)
+    if args.recompute_split:
+        split_from = None
+    else:
+        split_from = args.split_from if args.split_from and os.path.exists(args.split_from) else None
+    train_data, val_data, test_data, split_meta = resolve_scaffold_split(
+        dataset, seed=args.seed, split_from=split_from
+    )
+    if split_from is None:
+        split_meta["data_path"] = os.path.relpath(os.path.abspath(args.data), os.getcwd())
+        split_meta["created_at"] = datetime.now(timezone.utc).isoformat()
+        save_split_metadata(args.split_meta, split_meta)
     print(
         f"Dataset split - Train: {len(train_data)}, Val: {len(val_data)}, Test: {len(test_data)}"
     )
@@ -110,7 +127,8 @@ def main() -> None:
                         "seed": args.seed,
                         "best_val_loss": float(best_val_loss),
                         "epoch": epoch,
-                        "data_path": os.path.abspath(args.data),
+                        "data_path": os.path.relpath(os.path.abspath(args.data), os.getcwd()),
+                        "split_from": split_from or args.split_meta,
                         "saved_at": datetime.now(timezone.utc).isoformat(),
                     },
                 )

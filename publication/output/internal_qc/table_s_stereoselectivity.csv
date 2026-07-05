@@ -1,0 +1,7 @@
+Scaffold,dG_R_kcal_mol,dG_S_kcal_mol,delta_dG_S_minus_R,Preferred_enantiomer
+Warfarin,-11.294,-10.924,0.37,R
+p_nitro,-12.123,-11.768,0.355,R
+m_nitro,-11.314,-11.505,-0.191,S
+m_bromo,-11.373,-11.03,0.343,R
+BENZ,-11.231,-10.532,0.699,R
+dimethoxy_23,-11.117,-11.49,-0.373,S

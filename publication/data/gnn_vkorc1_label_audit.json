@@ -1,0 +1,20 @@
+{
+  "rl_smiles_in_screening": 54,
+  "splits": [
+    {
+      "split": "train",
+      "total_vkorc1_labels": 67,
+      "chembl_or_non_rl_labels": 41,
+      "rl_library_smiles_overlaps": 26,
+      "rl_pseudo_labels": 26
+    },
+    {
+      "split": "test",
+      "total_vkorc1_labels": 41,
+      "chembl_or_non_rl_labels": 23,
+      "rl_library_smiles_overlaps": 18,
+      "rl_pseudo_labels": 18
+    }
+  ],
+  "note": "rl_library_smiles_overlaps counts test/train VKORC1 labels whose canonical SMILES appear in the RL screening library (config + SDF resolution), not necessarily Vina-derived pseudo-labels. Table S5 excludes these SMILES from the held-out test set."
+}

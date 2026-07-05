@@ -1,0 +1,5 @@
+system_id,run_order,manuscript_id,complex_pdb,ligand_sdf,cgenff_risk,pilot_ns,production_ns
+RL_Gen_37,1,MD-1,systems/RL_Gen_37/charmm_gui/complex.pdb,systems/RL_Gen_37/ligand_params/ligand.sdf,high,20,100
+RL_Gen_29_isoA,2,MD-2,systems/RL_Gen_29_isoA/charmm_gui/complex.pdb,systems/RL_Gen_29_isoA/ligand_params/ligand.sdf,high,20,100
+RL_Gen_22,3,MD-3,systems/RL_Gen_22/charmm_gui/complex.pdb,systems/RL_Gen_22/ligand_params/ligand.sdf,high,20,100
+RL_Gen_45,4,MD-4,systems/RL_Gen_45/charmm_gui/complex.pdb,systems/RL_Gen_45/ligand_params/ligand.sdf,high,20,100

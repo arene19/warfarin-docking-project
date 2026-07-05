@@ -1,0 +1,7 @@
+## Supplementary Table S4. Membrane MD summary (mirrors Table 5)
+
+| Ligand           |   VKOR_DeltaG_flat_kcal_mol |   VKOR_DeltaG_isoA_kcal_mol |   Production_ns |   Temperature_K |   Pressure_bar |   Protein_RMSD_mean_A |   Protein_RMSD_last25pct_A |   Ligand_RMSD_2nd_half_mean_A |   Ligand_RMSD_max_A |   ASN80_Hbond_occupancy_pct | Status   |
+|:-----------------|----------------------------:|----------------------------:|----------------:|----------------:|---------------:|----------------------:|---------------------------:|------------------------------:|--------------------:|----------------------------:|:---------|
+| RL_Gen_37_isoA   |                     -12.244 |                     -10.702 |             100 |          310.06 |           1.02 |                 2.526 |                      2.317 |                         1.918 |               2.833 |                       99.4  | Complete |
+| RL_Gen_29_isoA   |                     nan     |                     -11.419 |             100 |          310.06 |           1.28 |                 3.168 |                      3.779 |                         4.739 |               5.337 |                       10.29 | Complete |
+| S-warfarin (ref) |                     nan     |                     nan     |              20 |          310.06 |          -0.11 |                 1.543 |                      1.769 |                         3.181 |               4.828 |                        1    | Complete |

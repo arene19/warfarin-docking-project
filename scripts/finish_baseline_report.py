@@ -13,13 +13,15 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from gnn_baseline_evaluation import spearman_for_task, to_jsonable
-from gnn_model import load_checkpoint, load_multitask_data, scaffold_split
+from gnn_model import load_checkpoint, load_multitask_data, resolve_scaffold_split
 
 
 def main() -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    split_path = ROOT / "publication/data/gnn_scaffold_split.json"
+    split_from = str(split_path) if split_path.exists() else None
     dataset = load_multitask_data(str(ROOT / "data/coagulation_admet_multi_task.csv"))
-    _, _, test_data, _ = scaffold_split(dataset, seed=42)
+    _, _, test_data, _ = resolve_scaffold_split(dataset, seed=42, split_from=split_from)
     test_loader = DataLoader(test_data, batch_size=64, shuffle=False)
 
     mt_model, _ = load_checkpoint(ROOT / "coagulation_admet_gnn.pth", device)
