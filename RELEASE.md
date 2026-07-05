@@ -41,21 +41,15 @@ Follow [`deposition/ZENODO_UPLOAD.md`](deposition/ZENODO_UPLOAD.md):
 3. Note GitHub tag `v1.0-submission` and commit SHA in the Zenodo description
 4. Publish and copy the DOI
 
-## 4. Update manuscript
+## 4. Manuscript and Word export
 
-In `vkorc1_integrated_workflow_manuscript.md` Data Availability, replace:
-
-```text
-https://doi.org/10.5281/zenodo.21208445
-```
-
-with the published DOI. Regenerate Word export:
+Data Availability in `vkorc1_integrated_workflow_manuscript.md` cites Zenodo **https://doi.org/10.5281/zenodo.21208445** (version 1.0). After any manuscript edit, regenerate Word:
 
 ```bash
 python publication/md_to_docx.py
 ```
 
-Output: `vkorc1_integrated_workflow_manuscript.docx`
+Output: `vkorc1_integrated_workflow_manuscript.docx` (9 figures embedded).
 
 ## 5. Cross-reference table
 

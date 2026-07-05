@@ -18977,7 +18977,6 @@
   "train_n": 15172,
   "val_n": 1897,
   "test_n": 1897,
-  "data_path": "/home/amar/warfarin_project/data/coagulation_admet_multi_task.csv",
   "created_at": "2026-07-04T14:06:23.319001+00:00",
   "split_method": "murcko_scaffold_size_ordered"
 }

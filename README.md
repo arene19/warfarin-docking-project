@@ -83,7 +83,8 @@ python scripts/validate_reinvent_provenance.py
 - REINVENT run provenance: `publication/data/reinvent_provenance.json`
 - Manuscript tables/figures: `publication/output/tables/`, `publication/output/figures/`
 - Internal QC (reference ligands, not in manuscript): `publication/output/internal_qc/`
-- Zenodo bundle: `deposition/package/` (via `prepare_deposition.py`)
+- Zenodo bundle: `deposition/package/` (via `prepare_deposition.py`); archived at **https://doi.org/10.5281/zenodo.21208445** (version 1.0)
+- GitHub release tag: `v1.0-submission`
 - Legacy multi-receptor rigid docking summary: `docking_results.csv` (not used in manuscript; flexible RL screening in deposition)
 
 ## Membrane MD (GPU workstation)
@@ -102,7 +103,7 @@ CHARMM-GUI steps: [md_gromacs/CHARMM_GUI_CHECKLIST.md](md_gromacs/CHARMM_GUI_CHE
 ## Manuscript
 
 Draft: `vkorc1_integrated_workflow_manuscript.md` / `vkorc1_integrated_workflow_manuscript.docx`  
-Section **3.5 (MD simulations)** is reserved for upcoming GROMACS/AMBER work.
+Section **3.6** documents three completed comparative membrane MD systems (RL_Gen_37_isoA, RL_Gen_29_isoA, S-warfarin reference); see `md_gromacs/` for reproduction.
 
 ## License
 

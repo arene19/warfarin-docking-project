@@ -1,9 +1,11 @@
 {
-  "title": "VKORC1 de novo ligand discovery — supplementary data (GNN, docking, REINVENT4)",
-  "description": "Frozen multi-task master CSV, GNN checkpoints, Murcko scaffold split JSON, VKORC1 RL_Gen docking screening results, manuscript figures/tables, REINVENT4 scoring configuration, and reproduction scripts accompanying the warfarin-docking-project publication.",
+  "title": "VKORC1 de novo ligand discovery — supplementary data (GNN, docking, REINVENT4, MD)",
+  "description": "Frozen multi-task master CSV, GNN checkpoints, Murcko scaffold split JSON, VKORC1 RL_Gen docking results, comparative membrane MD summaries (RL_Gen_37_isoA, RL_Gen_29_isoA, S-warfarin reference), manuscript figures/tables, REINVENT4 scoring configuration, and reproduction scripts accompanying the warfarin-docking-project publication.",
   "upload_type": "dataset",
   "access_right": "open",
   "license": "MIT",
+  "doi": "10.5281/zenodo.21208445",
+  "conceptdoi": "10.5281/zenodo.21208444",
   "creators": [
     {
       "name": "Statovci, Amar",
@@ -16,7 +18,10 @@
     "graph neural network",
     "molecular docking",
     "REINVENT4",
-    "cheminformatics"
+    "active learning",
+    "membrane molecular dynamics",
+    "cheminformatics",
+    "de novo drug design"
   ],
   "related_identifiers": [
     {
@@ -25,5 +30,5 @@
       "resource_type": "software"
     }
   ],
-  "notes": "Replace ORCID and add DOI after upload. Build package with: ALLOW_STALE_CHECKPOINT=1 bash publication/build_all.sh"
+  "notes": "Build package with: ALLOW_STALE_CHECKPOINT=1 bash publication/build_all.sh; then zip deposition/package/."
 }

@@ -25,6 +25,8 @@ from gnn_model import (
     validation_loss,
 )
 
+ROOT = os.path.dirname(os.path.abspath(__file__))
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Train multi-task GNN for coagulation/ADMET.")
@@ -67,7 +69,7 @@ def main() -> None:
         dataset, seed=args.seed, split_from=split_from
     )
     if split_from is None:
-        split_meta["data_path"] = os.path.relpath(os.path.abspath(args.data), os.getcwd())
+        split_meta["data_path"] = os.path.relpath(os.path.abspath(args.data), ROOT)
         split_meta["created_at"] = datetime.now(timezone.utc).isoformat()
         save_split_metadata(args.split_meta, split_meta)
     print(
@@ -127,7 +129,7 @@ def main() -> None:
                         "seed": args.seed,
                         "best_val_loss": float(best_val_loss),
                         "epoch": epoch,
-                        "data_path": os.path.relpath(os.path.abspath(args.data), os.getcwd()),
+                        "data_path": os.path.relpath(os.path.abspath(args.data), ROOT),
                         "split_from": split_from or args.split_meta,
                         "saved_at": datetime.now(timezone.utc).isoformat(),
                     },

@@ -566,7 +566,6 @@ Docking is a **static snapshot**. MD simulates **motion over time** in a solvate
 | `RL_Gen_37` | **RL_Gen_37_isoA** | 100 ns | Top flat-dock hit; isoA embed used for MD |
 | `RL_Gen_29_isoA` | **RL_Gen_29_isoA** | 100 ns | Interaction-rich scaffold; MD counterexample |
 | `S_Warfarin_ref` | **S-warfarin (ref)** | 20 ns | Crystal-ligand reference pilot |
-| — | RL_Gen_22, RL_Gen_45 | Planned | Queued; not run for this submission |
 
 **Naming note:** The GROMACS run directory for the lead compound is `RL_Gen_37`, but the manuscript always calls it **RL_Gen_37_isoA** because the isoA stereochemical embed was used for parametrization.
 
@@ -695,7 +694,7 @@ Model outputs for top five docking hits across all six tasks. Use for **selectiv
 
 ### Table 5 — MD metrics (comparative)
 
-Three **completed** membrane MD systems (RL_Gen_37_isoA, RL_Gen_29_isoA, S-warfarin ref) plus **planned** RL_Gen_22/45. Includes production length, T/P, protein/ligand RMSD, and ASN80 H-bond occupancy. Use this table to compare pose stability — not just whether MD was run.
+Three **completed** membrane MD systems only (RL_Gen_37_isoA, RL_Gen_29_isoA, S-warfarin ref; matches manuscript Table 5). Includes production length, T/P, protein/ligand RMSD, and ASN80 H-bond occupancy. Use this table to compare pose stability — not just whether MD was run.
 
 ### Supplementary tables
 
@@ -755,7 +754,7 @@ Three **completed** membrane MD systems (RL_Gen_37_isoA, RL_Gen_29_isoA, S-warfa
 4. **Chirality-blind GNN** — enantiomers not distinguished by the network.
 5. **Sparse endpoints** — HSA (5 test labels) and VKORC1 (41) metrics are noisy.
 6. **Flat vs isoA docking gap** — top flat rank can mislead; always enumerate stereo for finals.
-7. **MD is comparative but not exhaustive** — three systems (2×100 ns RL + 20 ns warfarin ref); RL_Gen_22/45 not run; illustrative, not experimental proof.
+7. **MD is comparative but not exhaustive** — three systems (2×100 ns RL + 20 ns warfarin ref) only; illustrative, not experimental proof.
 8. **Docking ≠ MD stability** — RL_Gen_29_isoA shows strong static interactions but high ligand RMSD in bilayer MD.
 9. **Publication master is frozen** — live active-learning may diverge from deposited snapshot.
 
